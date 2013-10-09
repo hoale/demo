@@ -151,20 +151,23 @@ nav ul ul{
 	position:absolute; 
     top:99%;    /* Remove them out of viewport */
     left:-780px;  
-    opacity: 0;      /* Hide sub level, we will use this in transition */
-    -webkit-transition: opacity .8s ease; /* For chrome & safari */
-    -moz-transition: opacity .8s ease; /* For mozilla firefox */
-    -o-transition: opacity .8s ease; /* For opera */
-    transition: opacity .8s ease; /* Not yet implemented, but will be available soon */
+    /*opacity: 0;      /* Hide sub level, we will use this in transition */
+    /*-webkit-transition: opacity .8s ease; /* For chrome & safari */
+    /*-moz-transition: opacity .8s ease; /* For mozilla firefox */
+    /*-o-transition: opacity .8s ease; /* For opera */
+   /* transition: opacity .8s ease; Not yet implemented, but will be available soon */*/
     z-index:497;
     width:1400px;
     height:40px;
     background:#333;
     padding: 8px;
     border:1px solid black;
+    display: none;
+
     
 }
-nav > ul > li.top-menu:hover > ul { opacity: 1;}
+nav > ul > li.top-menu:hover > ul { display: block;}
+
 nav ul li ul >li{
 	float: left;
 	padding: 10px;
@@ -175,14 +178,11 @@ nav ul li ul.about li{
 	position: relative;
 	float: left;
 	left: 540px;
-	pointer-events:none;
-	z-index: 600; 
 }
 nav ul li ul.service li{
 	position: relative;
 	float: left;
 	left: 593px;
-	z-index: 600;
 }
 
 nav ul li ul >li a{
