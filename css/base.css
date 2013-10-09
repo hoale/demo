@@ -1,0 +1,220 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+body {
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 62.5%;
+	color: #3A3A3A;
+	background:#fff;
+ }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+a {
+	outline-style:none;
+	text-decoration: none;
+	 }
+
+a:hover {
+	text-decoration: none; }
+
+a.img {
+	border: none;
+	background-color:transparent; }
+
+form { margin: 0; padding: 0; }
+
+img { border: none; }
+
+hr {
+	border-color: #ccc;     
+	border-style: solid;   
+	border-width: 1px 0 0; 
+	clear: both;           
+	margin: 0px 0 10px 0; 
+	height: 0;             
+}
+
+.left {float:left;}
+.right{float:right;}
+
+textarea:focus, input:focus{
+	outline:none
+}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
+body {
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 62.5%;
+	color: #3A3A3A;
+	background: #fff;
+}
+
+.wrapper {
+	position: relative;
+	width: 950px;
+	margin: 0 auto;
+	padding: 0 15px;
+
+}
+#container {
+	width: 100%;
+	background: #fff;
+	min-height: 100%;
+	height: auto !important;
+}
+
+#header {
+	float: left;
+	width: 100%;
+	padding: 20px 0 0 0;
+	position: relative;
+	background: #fff;
+	z-index: 600;
+}
+
+#Logo a {
+	float: left;
+	display: inline;
+	margin: 0px 0 0px 0px;
+	padding: 0px 0 0px 0px;
+	width: 269px;
+}
+/* tạo dropdown menu*/
+nav {
+	position: relative;
+	width: 55%;
+	height: 40px;
+	font-style: normal;
+	float: right;
+	font-size: 1.5em;
+	font-weight: 400;
+	margin-top: -40px;
+	margin-right: -80px;
+}
+nav ul, nav li {
+
+	list-style-type: none; padding:0; margin: 0; display: inline;
+}
+nav ul li.top-menu {
+	float: left;
+	position: relative;
+	height:54px;
+}
+nav ul li.top-menu >a{
+	color:  #505050;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+
+}
+nav li.top-menu:last-child a{
+	color: #B13279;
+}
+
+nav li.top-menu:hover>a{
+	color: #71C2F5;
+}
+
+nav li.top-menu:last-child:hover a {
+	color:#46423C;
+}
+nav ul ul{
+	position:absolute; 
+    top:99%;    /* Remove them out of viewport */
+    left:-780px;  
+    opacity: 0;      /* Hide sub level, we will use this in transition */
+    -webkit-transition: opacity .8s ease; /* For chrome & safari */
+    -moz-transition: opacity .8s ease; /* For mozilla firefox */
+    -o-transition: opacity .8s ease; /* For opera */
+    transition: opacity .8s ease; /* Not yet implemented, but will be available soon */
+    z-index:497;
+    width:1400px;
+    height:40px;
+    background:#333;
+    padding: 8px;
+    border:1px solid black;
+    
+}
+nav > ul > li.top-menu:hover > ul { opacity: 1;}
+nav ul li ul >li{
+	float: left;
+	padding: 10px;
+
+}
+
+nav ul li ul.about li{
+	position: relative;
+	float: left;
+	left: 540px;
+	pointer-events:none;
+	z-index: 600; 
+}
+nav ul li ul.service li{
+	position: relative;
+	float: left;
+	left: 593px;
+	z-index: 600;
+}
+
+nav ul li ul >li a{
+	color: #808082 ;
+	font-size: 1em;
+	padding: 4px 17px 0 3px;
+	border-right: 1px solid #747171;
+
+}
+nav ul li ul li:last-child a {
+	border-right: 0px;
+}
+
+nav li .icon-menu {
+	opacity: 0;      /* Hide sub level, we will use this in transition */
+    -webkit-transition: opacity .6s ease-in-out; /* For chrome & safari */
+    -moz-transition: opacity .6s ease-in-out; /* For mozilla firefox */
+    -o-transition: opacity .6s ease-in-out; /* For opera */
+     transition: opacity .6s ease-in-out; /* Not yet implemented, but will be available soon */
+	position:absolute;
+	background: url(http://www.joyridecoffeedistributors.com/img/icon_menu-arrow.gif) no-repeat top center;
+	left: 27px;
+	bottom: 12px;
+	margin: 0 auto;
+	height: 6px;
+	width: 10px;
+
+}
+nav li:hover .icon-menu { opacity: 1}
+
+nav ul li ul li:hover >a{
+	color: white;
+
+
+}
