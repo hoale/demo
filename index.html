@@ -68,19 +68,32 @@
                 </div><!-- /Wrapper-->
             </header><!-- /header-->
 
-            <div id="box1">
-                <div class="slideshow"></div>
-                <header class="textbox1">
-                    <h2>
-                        <span class="top">Now Introducing Counter Culture's</span><br>
-                        <span class="bottom">Guatemala Finca Nueva Armenia</span>
-                        <br>
+            <div id="slideshow">
+                    <img src="http://www.joyridecoffeedistributors.com/images/uploads/slide_1.jpg">
+                    <img src="http://www.joyridecoffeedistributors.com/images/uploads/banner_order-coffee.jpg">
+                    <img src="http://www.joyridecoffeedistributors.com/images/uploads/Joyride_Coffee_Delivery_v1.jpg">
+                    <img src="http://www.joyridecoffeedistributors.com/images/uploads/homepage_chemex.jpg">
+            </div>
+            <script type="text/javascript">
+                $(function(){
+                    $('#slideshow img:gt(0)').hide();
+                    setInterval(function(){
+                      $('#slideshow :first-child').fadeOut()
+                         .next('img').fadeIn()
+                         .end().appendTo('.fadein');}, 
+                      3000);
+                });
+            </script>
+            <header class="textbox1">
+                <h2>
+                    <span class="top">Now Introducing Counter Culture's</span><br>
+                    <span class="bottom">Guatemala Finca Nueva Armenia</span>
+                    <br>
                     </h2>
                     <div class="learn-more">
                         <a href="#">Learn More</a>
                     </div>
-                </header>
-            </div>
+            </header>
             <div class="wrapper" id="caption">
                 <p>Joyride Coffee Distributors provides premium office coffee delivery and catering to businesses and corporations throughout the New York City metropolitan area.<a href=""> Our story »</a> </p>
             </div>
