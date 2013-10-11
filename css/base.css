@@ -1,24 +1,7 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-}
+
 * {
 	margin: 0;
+	padding: 0;
 }
 html, body {
 	height: 100%;
@@ -28,54 +11,16 @@ body {
 	font-size: 62.5%;
 	color: #3A3A3A;
 	background:#fff;
+
+ }
+ a{
+ 	text-decoration: none;
  }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
-}
-
-a {
-	outline-style:none;
-	text-decoration: none;
-	 }
-
-a:hover {
-	text-decoration: none; }
-
-a.img {
-	border: none;
-	background-color:transparent; }
-
-form { margin: 0; padding: 0; }
-
-img { border: none; }
-
-hr {
-	border-color: #ccc;     
-	border-style: solid;   
-	border-width: 1px 0 0; 
-	clear: both;           
-	margin: 0px 0 10px 0; 
-	height: 0;             
-}
-
-.left {float:left;}
-.right{float:right;}
-
-textarea:focus, input:focus{
-	outline:none
-}
-
-:focus {outline:none;}
-::-moz-focus-inner {border:0;}
-
-body {
-	font-family: Arial, Verdana, sans-serif;
-	font-size: 62.5%;
-	color: #3A3A3A;
-	background: #fff;
 }
 
 .wrapper {
@@ -90,6 +35,7 @@ body {
 	background: #fff;
 	min-height: 100%;
 	height: auto !important;
+	position: relative;
 }
 
 #header {
@@ -117,8 +63,8 @@ nav {
 	float: right;
 	font-size: 1.5em;
 	font-weight: 400;
-	margin-top: -40px;
-	margin-right: -80px;
+	margin-top: -53px;
+	margin-right: -35px;
 }
 nav ul, nav li {
 
@@ -127,12 +73,13 @@ nav ul, nav li {
 nav ul li.top-menu {
 	float: left;
 	position: relative;
-	height:54px;
+	height:60px;
+
 }
 nav ul li.top-menu >a{
 	color:  #505050;
 	display: block;
-	padding: 10px;
+	padding: 18px;
 	text-decoration: none;
 
 }
@@ -148,24 +95,24 @@ nav li.top-menu:last-child:hover a {
 	color:#46423C;
 }
 nav ul ul{
-	position:absolute; 
-    top:99%;    /* Remove them out of viewport */
-    left:-780px;  
-    opacity: 0;      /* Hide sub level, we will use this in transition */
-    -webkit-transition: opacity 2s ease; /* For chrome & safari */
-    -moz-transition: opacity 2s ease; /* For mozilla firefox */
-    -o-transition: opacity 2s ease; /* For opera */
-    transition: opacity 2s ease; /* Not yet implemented, but will be available soon */*/
-    z-index:497;
-    width:1400px;
-    height:40px;
+	position:absolute;
     background:black;
     padding: 8px;
     display: none;
-
+    opacity: 0.8;
+    height:40px;
+    top:60px;   
+}
+nav ul ul.about {
+    left:-628px; 
+    width:1264px;
     
 }
-nav > ul > li.top-menu:hover > ul { opacity: 0.7; display: block;}
+nav ul ul.service {
+	width: 1265px;
+	left:-703px;
+} 
+nav > ul > li.top-menu:hover > ul {  display: block;}
 
 nav ul li ul >li{
 	float: left;
@@ -176,12 +123,12 @@ nav ul li ul >li{
 nav ul li ul.about li{
 	position: relative;
 	float: left;
-	left: 540px;
+	left: 400px;
 }
 nav ul li ul.service li{
 	position: relative;
 	float: left;
-	left: 650px;
+	left: 600px;
 }
 
 nav ul li ul >li a{
@@ -196,35 +143,249 @@ nav ul li ul li:last-child a {
 }
 
 nav li .icon-menu {
-	opacity: 0;      /* Hide sub level, we will use this in transition */
-    -webkit-transition: opacity .6s ease-in-out; /* For chrome & safari */
-    -moz-transition: opacity .6s ease-in-out; /* For mozilla firefox */
-    -o-transition: opacity .6s ease-in-out; /* For opera */
-     transition: opacity .6s ease-in-out; /* Not yet implemented, but will be available soon */
+	/*opacity: 0;      /* Hide sub level, we will use this in transition */
+    /*-webkit-transition: opacity .6s ease-in-out; /* For chrome & safari */
+    /*-moz-transition: opacity .6s ease-in-out; /* For mozilla firefox */
+    /*-o-transition: opacity .6s ease-in-out; /* For opera */
+    /*transition: opacity .6s ease-in-out; /* Not yet implemented, but will be available soon */
 	position:absolute;
 	background: url(http://www.joyridecoffeedistributors.com/img/icon_menu-arrow.gif) no-repeat top center;
-	left: 27px;
-	bottom: 12px;
+	left: 34px;
+	bottom: 5px;
 	margin: 0 auto;
 	height: 6px;
 	width: 10px;
+	display: none;
 
 }
-nav li:hover .icon-menu { opacity: 1}
+nav li:hover .icon-menu { display: block;}
 
 nav ul li ul li:hover >a{
 	color: white;
 }
 /* slide show*/
 
-#slideshow {
+#slideshow
+{
+	position:relative;
+	top:71px;
+	left:0px;
+	height:420px;
+	width:100%;
+	z-index:50;
+	display:block;
+}
+
+#slideshow img
+{
+	position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+	height:420px;
+	width:100%;
+}
+
+#slideshow img.active {
+    z-index:10;
+	opacity:1.0;
+}
+
+#slideshow img.last-active {
+    z-index:9;
+}
+
+.slidedescription
+{
+	position:absolute;
+	text-align:center;
+	width:100%;
+	padding:0px;
+	top:180px;
+	left:0px;
+	display:block;
+	z-index:95;
+}
+
+h2
+{
+	color:rgb(255, 255, 255);
+	font-size:4.6em;
+	text-shadow:1px 1px 2px rgba(0, 0, 0, 0.3);
+	font-weight:normal;
+	padding:5px;
+}
+.slidedescription h2 .top
+{
+	font-family:"proxima-nova",sans-serif;
+	font-style:normal;
+	font-weight:200;
+}
+
+.slidedescription h2 .bottom
+{
+	font-weight:900;
+	font-style:normal;
+}
+
+.learnmorebutton
+{
+	position: relative;
+	top: 45px;
+}
+
+.learnmorebutton a
+{
+	background:none repeat scroll 0% 0% rgb(95, 200, 219);
+	padding:20px 32px;
+	color:rgb(255, 255, 255);
+	font-family:"proxima-nova",sans-serif;
+	font-style:normal;
+	font-weight:700;
+	font-size:1.5em;
+	letter-spacing:0.08em;
+	text-shadow:1px 1px 1px rgba(0, 0, 0, 0.08);
+	text-transform:uppercase;
+	box-shadow:1px 1px 1px rgba(0, 0, 0, 0.2);
+	text-decoration:none;
+}
+
+/* slides text */
+.textbanner
+{	position: relative;
+	top:71px;
+	width:100%;
+	height: 94px;
+	background: url(http://www.joyridecoffeedistributors.com/img/bg_blue-pattern.gif) repeat;
+	margin-bottom: 36px;
+}
+
+.textbanner p
+{	
+	position: absolute;
+	top: 25px;
+	left: 250px;
+	font-size: 1.7em;
+	line-height: 1.4em;
+	width: 750px;
+	text-align: center;
+
+}
+
+.textbanner p a {
+	color: #B13279;
+}
+.textbanner p a:hover {
+	color: #7C1457;
+}
+
+/* content */
+
+.home-content {
 	position: relative;
 	width: 100%;
-	height: 420;
-	top:14px;
+	top: 77px;
+	height: 260px;
+	background: blue;
 }
-#slidesshow img {
+/* footer */
+#footer {
+	position: relative;
+	width: 100%;
+	top: 90px;
+	height: 136px;
+	background: #282828;
+}
+
+#footer .content-footer{
+	height: 136px;
+	position: relative;
+	font-family: sans-serif;
+}
+/* footer left*/
+
+#footer .left {
+	height: 23px;
+}
+
+#footer .left ul {
+	list-style: none;
+	padding-top:15px;
+}
+
+#footer .left ul li {
+	float: left;
+	margin-right: 22px;
+	background:0;
+}
+
+#footer .left ul li a {
+	float: left;
+	font-size: 1.3em;
+	font-weight: 400;
+	padding-top: 2px;
+	color: #5FC8DB;
+}
+
+#footer .left ul li:hover a{
+	color: white;
+}
+
+#footer .left ul li.social-media{
+	margin-right:8px;	
+}
+
+#footer .left ul li.facebook {
+	margin-left: 7px;
+}
+
+#footer .left ul li.social-media a {
+	float: left;
+	width: 23px;
+	height: 23px;
+	background: url(http://www.joyridecoffeedistributors.com/img/icon_social-media.gif) no-repeat top left;
+	padding: 0;
+	text-indent: -9999px;
+}
+
+#footer .left ul li.facebook a:hover{
+	background-position: 0 -23px;	
+}
+
+#footer .left ul li.twitter a {
+	background-position: -32px 0;
+}
+#footer .left ul li.twitter a:hover{
+	background-position: -32px -23px;
+}
+/*footer right*/
+#footer .right {
+	float: right;
+	width: 200px;
+}
+
+#footer .right p{
+	float: right;
+	font-size: 1.2em;
+	color: #808082;
+}
+
+#footer .right strong {
+	color: white;
+	letter-spacing: 0.08em;
+}
+/* footer copyright */
+#footer p.copyright {
 	position: absolute;
-	left: 0;
-	top:0;
+	left: 15px;
+	bottom: 15px;
+	font-size: 1.1em;
+	color: #6D6E71;
+	font-style: normal;
+	font-family: "proxima-nova",sans-serif;
+	font-weight: 300;
+}
+#footer p.copyright a {
+	color: #5FC8DB;
 }
