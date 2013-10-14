@@ -35,25 +35,25 @@ $(function() {
     {
         $(".title1").css({"visibility":"hidden"});
         $(".tHover1 a").css({"visibility":"visible"});
-        $(".bHoverDiv1").css({"visibility":"visible"});
+        $(".bHover1 a").css({"visibility":"visible"});
     })
     $(".div1").mouseout(function()
     {
         $(".title1").css({"visibility":"visible"});
         $(".tHover1 a").css({"visibility":"hidden"});
-        $(".bHoverDiv1").css({"visibility":"hidden"});
+        $(".bHover1 a").css({"visibility":"hidden"});
     })
     $(".div2").mouseover(function()
     {
         $(".title2").css({"visibility":"hidden"});
-        $(".div2 .tHoverDiv2").css({"visibility":"visible"});
-        $(".div2 .bHoverDiv2").css({"visibility":"visible"});
+        $(".div2 .tHover2").css({"visibility":"visible"});
+        $(".div2 .bHover2").css({"visibility":"visible"});
     })
     $(".div2").mouseout(function()
     {
         $(".title2").css({"visibility":"visible"});
-        $(".div2 .tHoverDiv2").css({"visibility":"hidden"});
-        $(".div2 .bHoverDiv2").css({"visibility":"hidden"});
+        $(".div2 .tHover2").css({"visibility":"hidden"});
+        $(".div2 .bHover2").css({"visibility":"hidden"});
     })
 
 

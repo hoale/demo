@@ -19,7 +19,7 @@ body {
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section ,div {
 	display: block;
 }
 img {
@@ -47,7 +47,7 @@ img {
 	float: left;
 	width: 100%;
 	padding: 20px 0 0 0;
-	position: fixed;
+	position: relative;
 	background: #fff;
 	z-index: 900;
 }
@@ -296,194 +296,111 @@ h2
 
 /* content */
 
-.content {
+#content {
 	margin-top:100px;
-	clear:both;
-	width: 100%;
+	width:100%;
+	text-align:center;
+}
+#content #div{
+	float:left;
+	width:300px;
 	height:260px;
 	position:relative;
-	background:#FFF;
+	margin-bottom:20px;
+	left:10%;
+	margin-left:2%;
 }
-.content .div1 {
-	margin-left:160px;
-	width: 300px;
-	height:260px;
-	position:absolute;
-}
-.content .overlay {
+#content .overlay {
     background: none repeat scroll 0 0 #000000;
     height: 260px;
     opacity: 0.3;
     position: absolute;
     width: 300px;
 }
-.content img {
-	top:0px;
-}
-.content .div2 p.title2 {
-	margin-left:70px;
-}
-.content p.title1 {
-	font-family: "proxima-nova",sans-serif;
+#content #title {
 	position:absolute;
-	margin-top:120px;
-	font-style: normal;
-	margin-left:40px;
-	font-weight:700;
-	font-size:16px;
-	letter-spacing:2px;
+	font-size:200%;
+	width:100%;
 }
-.content p.title2 {
-	font-family: "proxima-nova",sans-serif;
-	position:absolute;
-	margin-top:120px;
-	font-style: normal;
-	margin-left:40px;
-	font-weight:700;
-	font-size:16px;
-	letter-spacing:2px;
+#content #title a {
+	color:#FFF;
 }
-.content .tHover1 a{
+#content #tHover {
 	position:absolute;
-	color: #FFFFFF;
-    font-family: "proxima-nova",sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-	line-height:30px;
     margin-top: 55px;
     padding: 0 36px;
     text-align: center;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     width: 228px;
-	text-decoration:none;
 	visibility:hidden;
 }
-.content .tHoverDiv2 {
-	position:absolute;
+#content #tHover a {
 	color: #FFFFFF;
-    font-family: "proxima-nova",sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
+	font-size: 16px;
 	line-height:30px;
-    top: 50px;
-    padding: 0 36px;
-    text-align: center;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    width: 228px;
-	text-decoration:none;
-	visibility:hidden;
 }
-.content .bHoverDiv1{
-	background: none repeat scroll 0 0 #B13279;
-    color: #FFFFFF;
-    font-family: "proxima-nova",sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-	letter-spacing: 0.09em;
-    padding: 12px 20px;
-    text-align: center;
+#content #bHover {
+	text-align: center;
     text-transform: uppercase;
-    transition: background 500ms ease-in-out 0s;
 	position:absolute;
 	top:180px;
 	left:60px;
 	visibility:hidden;
 }
-.content .bHoverDiv2{
+#content #bHover a {
 	background: none repeat scroll 0 0 #B13279;
-    color: #FFFFFF;
-    font-family: "proxima-nova",sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-	letter-spacing: 0.09em;
-    padding: 12px 20px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: background 500ms ease-in-out 0s;
-	position:absolute;
-	top:180px;
-	left:80px;
-	visibility:hidden;
-}
-.content p.title1 a {
-	text-decoration:none;
+	padding: 12px 20px;
+	font-size: 12px;
 	color:#FFF;
 }
-.content p.title2 a {
-	text-decoration:none;
-	color:#FFF;
+#content .title1 {
+	top:43%;
 }
-.content .div2 {
-	top:0px;
-	margin-left:485px;
-	width: 300px;
-	height:260px;
-	position:absolute;
+
+#content .title2 {
+	top:43%;
 }
-.content .div3 {
-	top:0px;
-	margin-left:811px;
-	width: 300px;
-	height:260px;
-	position:relative;
+
+#content .title3 {
+	background:none repeat scroll 0 0 #000;
 }
-.content .div3 .titleDiv3 {
-	height:20px;
-	text-transform:uppercase;
-	background:none repeat scroll 0 0 #000000;
-	color:#FFF;
-	text-align:center;
-	letter-spacing:0.09em;
-	font-family: "proxima-nova",sans-serif;
-	font-weight: 700;
-	padding: 10px 0;
-	font-size:15px;
-	margin-bottom:20px;
-	position:relative;
+#content .bHover2 {
+	margin-top:20px;
+	margin-left:10%;
 }
-.content .row {
+#content #row {
 	width:100%;
-	height:54px;
-	position:relative;
-	margin-bottom:19px;
+	text-align:left;
+	margin-top:40px;
 }
-.content .date {
-    color: #6D6E71;
-    font-family: "proxima-nova",sans-serif;
-    font-size: 11px;
-    font-style: normal;
-    font-weight: 400;
-    margin: 0 0 4px;
-    text-transform: uppercase;
-	margin-left: 70px;
+#content .row3 {
+	padding-top:12px;
 }
-.content .address {
-    font-family: "proxima-nova",sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.4em;
-	font-size:12px;
-	margin-left:70px;
-}
-.content .address a {
-	text-decoration:none;
-	color: #B13279;
-}
-.content .address a:hover {
-	color:#7C1457;
-}
-.content .div3 .img {
+#content .img {
 	height:54px;
 	width:54px;
 	background:none repeat scroll 0 0 #EEEEEE;
 	position:absolute;
 }
+
+#content .date {
+	color: #6D6E71;
+	font-size: 11px;
+    text-transform: uppercase;
+	margin-left:23%;
+}
+#content .address {
+	margin-left:23%;
+}
+#content .address a {
+	color: #B13279;
+	font-size:12px;
+}
+#content .address a:hover {
+	color:#7C1457;
+}
 /* footer */
 #footer {
+	clear:both;
 	position: relative;
 	width: 100%;
 	top: 90px;
