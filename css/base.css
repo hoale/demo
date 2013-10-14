@@ -22,12 +22,15 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+img {
+	max-width: 100%;
+}
 
 .wrapper {
 	position: relative;
-	width: 950px;
+	width: 75%;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 0;
 
 }
 #container {
@@ -36,6 +39,8 @@ footer, header, hgroup, menu, nav, section {
 	min-height: 100%;
 	height: auto !important;
 	position: relative;
+	margin: 0 auto;
+
 }
 
 #header {
@@ -44,131 +49,140 @@ footer, header, hgroup, menu, nav, section {
 	padding: 20px 0 0 0;
 	position: relative;
 	background: #fff;
-	z-index: 600;
+	z-index: 900;
 }
 
-#Logo a {
+#logo a {
 	float: left;
 	display: inline;
 	margin: 0px 0 0px 0px;
 	padding: 0px 0 0px 0px;
 	width: 269px;
+	height: 39px;
 }
 /* tạo dropdown menu*/
-nav {
+.navigation {
 	position: relative;
-	width: 55%;
-	height: 40px;
 	font-style: normal;
 	float: right;
-	font-size: 1.5em;
+	font-size: 1.4em;
 	font-weight: 400;
-	margin-top: -53px;
-	margin-right: -35px;
+	margin: 0 0 0 0;
 }
-nav ul, nav li {
+.navigation ul, .navigation li {
 
 	list-style-type: none; padding:0; margin: 0; display: inline;
 }
-nav ul li.top-menu {
+.navigation ul li.top-menu {
 	float: left;
 	position: relative;
-	height:60px;
+	height:54px;
 
 }
-nav ul li.top-menu >a{
+.navigation ul li.top-menu >a{
 	color:  #505050;
 	display: block;
-	padding: 18px;
+	padding: 16px;
 	text-decoration: none;
 
 }
-nav li.top-menu:last-child a{
+.navigation li.top-menu:last-child a{
 	color: #B13279;
 }
 
-nav li.top-menu:hover>a{
+.navigation li.top-menu:hover>a{
 	color: #71C2F5;
 }
 
-nav li.top-menu:last-child:hover a {
+.navigation li.top-menu:last-child:hover a {
 	color:#46423C;
 }
-nav ul ul{
+.navigation ul ul{
 	position:absolute;
-    background:black;
-    padding: 8px;
+    background:transparent;
+    padding: 3px;
     display: none;
-    opacity: 0.8;
-    height:40px;
-    top:60px;   
+    top:100%;
+    width: 750px;
+	left: -910%;
+	z-index: 999;
 }
-nav ul ul.about {
-    left:-628px; 
-    width:1264px;
-    
+.navigation ul ul.service {
+	left: -715%;
 }
-nav ul ul.service {
-	width: 1265px;
-	left:-703px;
-} 
-nav > ul > li.top-menu:hover > ul {  display: block;}
+.navigation > ul > li.top-menu:hover > ul {  display: block;}
 
-nav ul li ul >li{
+.navigation ul li ul >li{
 	float: left;
 	padding: 10px;
-
 }
 
-nav ul li ul.about li{
+.navigation ul li ul.about li{
 	position: relative;
 	float: left;
 	left: 400px;
 }
-nav ul li ul.service li{
+.navigation ul li ul.service li{
 	position: relative;
 	float: left;
-	left: 600px;
+	left: 450px;
 }
 
-nav ul li ul >li a{
+.navigation ul li ul >li a{
 	color: #808082 ;
-	font-size: 0.9em;
+	font-size: 1.1em;
 	padding: 4px 17px 0 3px;
 	border-right: 1px solid #747171;
 
 }
-nav ul li ul li:last-child a {
+.navigation ul li ul li:last-child a {
 	border-right: 0px;
 }
 
-nav li .icon-menu {
-	/*opacity: 0;      /* Hide sub level, we will use this in transition */
-    /*-webkit-transition: opacity .6s ease-in-out; /* For chrome & safari */
-    /*-moz-transition: opacity .6s ease-in-out; /* For mozilla firefox */
-    /*-o-transition: opacity .6s ease-in-out; /* For opera */
-    /*transition: opacity .6s ease-in-out; /* Not yet implemented, but will be available soon */
+.navigation li .icon-menu {
 	position:absolute;
 	background: url(http://www.joyridecoffeedistributors.com/img/icon_menu-arrow.gif) no-repeat top center;
-	left: 34px;
-	bottom: 5px;
+	left: 33px;
+	bottom: 10px;
 	margin: 0 auto;
 	height: 6px;
 	width: 10px;
 	display: none;
 
 }
-nav li:hover .icon-menu { display: block;}
+.navigation li:hover .icon-menu { display: block;}
 
-nav ul li ul li:hover >a{
+.navigation ul li ul li:hover >a{
 	color: white;
 }
+
+.sub-background {
+	position: absolute;
+	width: 100%;
+	background: black;
+	display: none;
+	opacity: 0.9;
+	height: 42px;
+	top:100%;
+}
+
+
 /* slide show*/
+.slides-overlay {
+	position: absolute;
+	width: 100%;
+	background: black;
+	display: none;
+	opacity: 0.4;
+	height: 413px;
+	top:100%;
+	z-index: 900;
+}
 
 #slideshow
 {
 	position:relative;
-	top:71px;
+	top:67px;
 	left:0px;
 	height:420px;
 	width:100%;
@@ -211,14 +225,14 @@ nav ul li ul li:hover >a{
 h2
 {
 	color:rgb(255, 255, 255);
-	font-size:4.6em;
+	font-size:4.7em;
 	text-shadow:1px 1px 2px rgba(0, 0, 0, 0.3);
 	font-weight:normal;
 	padding:5px;
 }
 .slidedescription h2 .top
 {
-	font-family:"proxima-nova",sans-serif;
+	font-family: sans-serif;
 	font-style:normal;
 	font-weight:200;
 }
@@ -240,10 +254,10 @@ h2
 	background:none repeat scroll 0% 0% rgb(95, 200, 219);
 	padding:20px 32px;
 	color:rgb(255, 255, 255);
-	font-family:"proxima-nova",sans-serif;
+	font-family: sans-serif;
 	font-style:normal;
 	font-weight:700;
-	font-size:1.5em;
+	font-size:2em;
 	letter-spacing:0.08em;
 	text-shadow:1px 1px 1px rgba(0, 0, 0, 0.08);
 	text-transform:uppercase;
@@ -254,7 +268,7 @@ h2
 /* slides text */
 .textbanner
 {	position: relative;
-	top:71px;
+	top: 67px;
 	width:100%;
 	height: 94px;
 	background: url(http://www.joyridecoffeedistributors.com/img/bg_blue-pattern.gif) repeat;
@@ -264,11 +278,11 @@ h2
 .textbanner p
 {	
 	position: absolute;
-	top: 25px;
-	left: 250px;
-	font-size: 1.7em;
+	top: 20%;
+	left: 25%;
+	font-size: 1.6em;
+	width: 55%;
 	line-height: 1.4em;
-	width: 750px;
 	text-align: center;
 
 }
@@ -282,12 +296,191 @@ h2
 
 /* content */
 
-.home-content {
-	position: relative;
+.content {
+	margin-top:100px;
+	clear:both;
 	width: 100%;
-	top: 77px;
-	height: 260px;
-	background: blue;
+	height:260px;
+	position:relative;
+	background:#FFF;
+}
+.content .div1 {
+	margin-left:160px;
+	width: 300px;
+	height:260px;
+	position:absolute;
+}
+.content .overlay {
+    background: none repeat scroll 0 0 #000000;
+    height: 260px;
+    opacity: 0.3;
+    position: absolute;
+    width: 300px;
+}
+.content img {
+	top:0px;
+}
+.content .div2 p.title2 {
+	margin-left:70px;
+}
+.content p.title1 {
+	font-family: "proxima-nova",sans-serif;
+	position:absolute;
+	margin-top:120px;
+	font-style: normal;
+	margin-left:40px;
+	font-weight:700;
+	font-size:16px;
+	letter-spacing:2px;
+}
+.content p.title2 {
+	font-family: "proxima-nova",sans-serif;
+	position:absolute;
+	margin-top:120px;
+	font-style: normal;
+	margin-left:40px;
+	font-weight:700;
+	font-size:16px;
+	letter-spacing:2px;
+}
+.content .tHover1 a{
+	position:absolute;
+	color: #FFFFFF;
+    font-family: "proxima-nova",sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+	line-height:30px;
+    margin-top: 55px;
+    padding: 0 36px;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    width: 228px;
+	text-decoration:none;
+	visibility:hidden;
+}
+.content .tHoverDiv2 {
+	position:absolute;
+	color: #FFFFFF;
+    font-family: "proxima-nova",sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+	line-height:30px;
+    top: 50px;
+    padding: 0 36px;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    width: 228px;
+	text-decoration:none;
+	visibility:hidden;
+}
+.content .bHoverDiv1{
+	background: none repeat scroll 0 0 #B13279;
+    color: #FFFFFF;
+    font-family: "proxima-nova",sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+	letter-spacing: 0.09em;
+    padding: 12px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background 500ms ease-in-out 0s;
+	position:absolute;
+	top:180px;
+	left:60px;
+	visibility:hidden;
+}
+.content .bHoverDiv2{
+	background: none repeat scroll 0 0 #B13279;
+    color: #FFFFFF;
+    font-family: "proxima-nova",sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+	letter-spacing: 0.09em;
+    padding: 12px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background 500ms ease-in-out 0s;
+	position:absolute;
+	top:180px;
+	left:80px;
+	visibility:hidden;
+}
+.content p.title1 a {
+	text-decoration:none;
+	color:#FFF;
+}
+.content p.title2 a {
+	text-decoration:none;
+	color:#FFF;
+}
+.content .div2 {
+	top:0px;
+	margin-left:485px;
+	width: 300px;
+	height:260px;
+	position:absolute;
+}
+.content .div3 {
+	top:0px;
+	margin-left:811px;
+	width: 300px;
+	height:260px;
+	position:relative;
+}
+.content .div3 .titleDiv3 {
+	height:20px;
+	text-transform:uppercase;
+	background:none repeat scroll 0 0 #000000;
+	color:#FFF;
+	text-align:center;
+	letter-spacing:0.09em;
+	font-family: "proxima-nova",sans-serif;
+	font-weight: 700;
+	padding: 10px 0;
+	font-size:15px;
+	margin-bottom:20px;
+	position:relative;
+}
+.content .row {
+	width:100%;
+	height:54px;
+	position:relative;
+	margin-bottom:19px;
+}
+.content .date {
+    color: #6D6E71;
+    font-family: "proxima-nova",sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0 0 4px;
+    text-transform: uppercase;
+	margin-left: 70px;
+}
+.content .address {
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4em;
+	font-size:12px;
+	margin-left:70px;
+}
+.content .address a {
+	text-decoration:none;
+	color: #B13279;
+}
+.content .address a:hover {
+	color:#7C1457;
+}
+.content .div3 .img {
+	height:54px;
+	width:54px;
+	background:none repeat scroll 0 0 #EEEEEE;
+	position:absolute;
 }
 /* footer */
 #footer {
@@ -322,7 +515,7 @@ h2
 
 #footer .left ul li a {
 	float: left;
-	font-size: 1.3em;
+	font-size: 1.4em;
 	font-weight: 400;
 	padding-top: 2px;
 	color: #5FC8DB;
@@ -367,7 +560,7 @@ h2
 
 #footer .right p{
 	float: right;
-	font-size: 1.2em;
+	font-size: 1.4em;
 	color: #808082;
 }
 
@@ -380,7 +573,7 @@ h2
 	position: absolute;
 	left: 15px;
 	bottom: 15px;
-	font-size: 1.1em;
+	font-size: 1.3em;
 	color: #6D6E71;
 	font-style: normal;
 	font-family: "proxima-nova",sans-serif;

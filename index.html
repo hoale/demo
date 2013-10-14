@@ -5,9 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>New York Specialty Office | Joyride Coffe</title>
         <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" type="text/css" href="css/base.css">
         <script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+
 </head>
     </head>
     <body>
@@ -19,10 +21,10 @@
                             <img src="img/logo_joyride-coffee.gif" alt="Joyride Coffee"></img>
                         </a>
                     </h1>
-             
-                    <nav>
+                
+                    <nav class="navigation">
                         <ul>
-                            <li class="top-menu">
+                            <li class="top-menu parent-menu">
                                 <a href="#">About</a>
                                 <div class="icon-menu"></div>
                                 <ul class="about">
@@ -34,7 +36,7 @@
                                 </ul><!--menu cap 2-->
 
                             </li>
-                            <li class="top-menu">
+                            <li class="top-menu parent-menu">
                                 <a href="#">Service</a>
                                 <div class="icon-menu"></div>
                                 <ul  class="service">
@@ -53,28 +55,11 @@
                     
                         <!--<a href="#" id="pull">Menu</a>-->
                     </nav>
-
-                </div><!-- /Wrapper-->
+                </div><!-- /Wrapper--> 
+                <div class="sub-background"></div>
+                <div class="slides-overlay"></div>   
             </header><!-- /header-->
-            <script type="text/javascript">
-                function slideSwitch() {
-                var $active = $('#slideshow img.active');
-                if ( $active.length == 0 ) $active = $('#slideshow img:last');
-                var $next =  $active.next().length ? $active.next()
-                : $('#slideshow img:first');
-                
-                $active.addClass('last-active');
-                $next.css({opacity: 0.0})
-                .addClass('active')
-                .animate({opacity: 1.0}, 1000, function() {
-                $active.removeClass('active last-active');
-                   });
-                }
-
-                    $(function() {
-                        setInterval( "slideSwitch()", 5000 );
-                });
-            </script>
+            
             <div id="slideshow">
                     <img src="img/slide1.jpg" alt="Slideshow Image 1" class="active"/>
                     <img src="img/slide2.jpg" alt="Slideshow Image 2"/>
@@ -97,7 +82,56 @@
             <div class="textbanner wrapper">
                     <p>Joyride Coffee Distributors provides premium office coffee delivery and catering to businesses and corporations throughout the New York City metropolitan area.<a href="#">Our story »</a> </p>
             </div><!-- /texbanner-->
-            <div class="home-content">
+
+            <div class="content">
+                <div class="div1">
+                    <div class="overlay"></div> 
+                    <p class="title1">
+                        <a href="/schedule-a-tasting">SCHEDULE A TASTING</a>
+                    </p>         
+                    <div class="tHover1">
+                        <a href="http://www.joyridecoffeedistributors.com/schedule-a-tasting">Learn about Joyride's office coffee services – it’s delicious, fun, informative, and free!</a>
+                    </div>
+                    <div class="bHoverDiv1">Schedule a Tasting</div>
+                    <img src="img/Joyride-Coffee_Schedule-A-Tasting.jpg" alt="Schedule a Tasting" />
+                </div>
+
+                <div class="div2">
+                    <div class="overlay"></div> 
+                    <p class="title2">
+                        <a href="/coffees">OUR ROASTERS</a>
+                    </p>
+                    <img src="img/Joyride-Coffee_Roasters.jpg" alt="Schedule a Tasting" />  
+                    <div class="tHoverDiv2">All of our beans are roasted to order, locally. Our roasters are cherry picked from among the best of New York.
+                    </div>
+                    <div class="bHoverDiv2">Learn More</div>
+                </div>
+
+                <div class="div3">
+                    <div class="titleDiv3">From Our Blog</div>
+                    <div class="row">
+                        <div class="img"></div>
+                        <div class="date">October 7, 2013</div>
+                        <div class="address">
+                            <a target="_blank" href="http://www.joyridecoffeedistributors.com/blog/joyride-services-products/coffee-tasting-at-tobys-estate-williamsburg-bk">Coffee Tasting at Toby’s Estate, (Williamsburg, BK)</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="img"></div>
+                    <div class="date">October 1, 2013</div>
+                    <div class="address">
+                        <a target="_blank" href="http://www.joyridecoffeedistributors.com/blog/coffee-news/cafe-review-the-bean">Café Review – The Bean</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="img"></div>
+                    <div class="date">September 29, 2013</div>
+                    <div class="address">
+                        <a target="_blank" href="http://www.joyridecoffeedistributors.com/blog/uncategorized/happy-national-coffee-day">Happy National Coffee Day!</a>
+                    </div>
+                </div>
             </div>
 
             
@@ -132,5 +166,7 @@
                 </div>
             </footer><!-- /footer-->
         </div><!-- /container-->
+
+        <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>
