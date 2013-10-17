@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" type="text/css" href="css/base.css">
+        <link rel="stylesheet" type="text/css" href="css/home.css">
         <script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
 
 </head>
@@ -21,10 +22,10 @@
                             <img src="img/logo_joyride-coffee.gif" alt="Joyride Coffee"></img>
                         </a>
                     </h1>
-                
-                    <nav class="navigation">
+                    <a href="#" class="menu-toggle" id="icon-menu">menu</a>
+                    <nav class="navigation hide">
                         <ul>
-                            <li class="top-menu parent-menu">
+                            <li class="top-menu parent-menu parent">
                                 <a href="#">About</a>
                                 <div class="icon-menu"></div>
                                 <ul class="about">
@@ -36,7 +37,7 @@
                                 </ul><!--menu cap 2-->
 
                             </li>
-                            <li class="top-menu parent-menu">
+                            <li class="top-menu parent-menu parent">
                                 <a href="#">Service</a>
                                 <div class="icon-menu"></div>
                                 <ul  class="service">
@@ -56,67 +57,86 @@
                         <!--<a href="#" id="pull">Menu</a>-->
                     </nav>
                 </div><!-- /Wrapper--> 
-                <div class="sub-background"></div>
-                <div class="slides-overlay"></div>   
+                <div class="sub-background"></div>  
             </header><!-- /header-->
-            
+            <div class="slides-overlay"></div> 
             <div id="slideshow">
-                    <img src="img/slide1.jpg" alt="Slideshow Image 1" class="active"/>
-                    <img src="img/slide2.jpg" alt="Slideshow Image 2"/>
-                    <img src="img/slide3.jpg" alt="Slideshow Image 3"/>
-                    <img src="img/slide4.jpg" alt="Slideshow Image 4"/>
-                    <img src="img/slide5.jpg" alt="Slideshow Image 5"/>             
+                <img src="img/slide1.jpg" alt="Slideshow Image 1" class="active"/>
+                <img src="img/slide2.jpg" alt="Slideshow Image 2"/>
+                <img src="img/slide3.jpg" alt="Slideshow Image 3"/>
+                <img src="img/slide4.jpg" alt="Slideshow Image 4"/>
+                <img src="img/slide5.jpg" alt="Slideshow Image 5"/>             
             </div><!-- /slideshow-->
             <div class="slidedescription">
-                    <h2>
-                        <span class="top">Now Introducing Counter Culture's</span>
-                        <br/>
-                        <span class="bottom">Guatemala Finca Nueva Armenia</span>
-                    </h2>
+                <h2>
+                    <span class="top">Now Introducing Counter Culture's</span>
+                    <br/>
+                    <span class="bottom">Guatemala Finca Nueva Armenia</span>
+                </h2>
                     
-                    <div class="learnmorebutton">
-                        <a href="#">Learn More</a>
-                    </div>
+                <div class="learnmorebutton">
+                    <a href="#">Learn More</a>
+                </div>
             </div><!-- /slidedescription-->
 
             <div class="textbanner wrapper">
-                    <p>Joyride Coffee Distributors provides premium office coffee delivery and catering to businesses and corporations throughout the New York City metropolitan area.<a href="#">Our story »</a> </p>
+                <p>Joyride Coffee Distributors provides premium office coffee delivery and catering to businesses and corporations throughout the New York City metropolitan area.<a href="#">Our story »</a>
+                </p>
             </div><!-- /texbanner-->
 
-            <section id="content">
-	<div id="div" class="div1">
-    	<div class="overlay"></div>
-        <p id="title" class="title1"><a href="#">SCHEDULE A TASTING</a></p>
-        <div id="tHover" class="tHover1"><a href="#">Learn about Joyride's office coffee services – it’s delicious, fun, informative, and free!</a></div>
-        <div id="bHover" class="bHover1"><a>Schedule a Tasting</a></div>      
-        <img src="img/Joyride-Coffee_Schedule-A-Tasting.jpg" alt="Schedule a Tasting" />
-    </div>
-    <div id="div" class="div2">
-    	<div class="overlay"></div>
-        <p id="title" class="title2"><a href="#">OUR ROASTERS</a></p>
-        <div id="tHover" class="tHover2"><a>All of our beans are roasted to order, locally. Our roasters are cherry picked from among the best of New York.</a></div>
-        <div id="bHover" class="bHover2"><a>Learn More</a></div>
-    	<img src="img/Joyride-Coffee_Roasters.jpg" alt="Schedule a Tasting" />    	
-    </div>
-     <div id="div" class="div3">
-    	<div id="title" class="title3"><a>From Our Blog</a></div>
-        <div id="row" class="row1">
-        	<div class="img"></div>
-            <div class="date">October 7, 2013</div>
-            <div class="address"><a target="_blank" href="#">Coffee Tasting at Toby’s Estate, (Williamsburg, BK)</a></div>
-        </div>
-        <div id="row" class="row2">
-            <div class="img"></div>
-            <div class="date">October 1, 2013</div>
-            <div class="address"><a target="_blank" href="#">Café Review – The Bean</a></div>
-        </div>
-        <div id="row" class="row3">
-        	<div class="img"></div>
-            <div class="date">September 29, 2013</div>
-            <div class="address"><a target="_blank" href="#">Happy National Coffee Day!</a></div>
-        </div>
-    </div>
-</div>
+            <section class="content-container">
+            	<div class="content-item">
+                	<div class="overlay"></div>
+                    <p class="title">
+                        <a href="#">SCHEDULE A TASTING</a>
+                    </p>
+                    <div class="details hide">
+                        <a href="#">Learn about Joyride's office coffee services – it’s delicious, fun, informative, and free!</a>
+                    </div>
+                    <div class="action hide">
+                        <a>Schedule a Tasting</a>
+                    </div>      
+                    <img src="img/Joyride-Coffee_Schedule-A-Tasting.jpg" alt="Schedule a Tasting" />
+                </div>
+                <div class="content-item">
+                	<div class="overlay"></div>
+                    <p class="title">
+                        <a href="#">OUR ROASTERS</a>
+                    </p>
+                    <div class="details hide">
+                        <a>All of our beans are roasted to order, locally. Our roasters are cherry picked from among the best of New York.</a>
+                    </div>
+                    <div class="action hide" id="action-learnmore">
+                        <a>Learn More</a>
+                    </div>
+                	<img src="img/Joyride-Coffee_Roasters.jpg" alt="Schedule a Tasting" />    	
+                </div>
+                 <div class="content-item">
+                	<div class="title-blog"><a>From Our Blog</a>
+                    </div>
+                    <div id="row" class="row1">
+                    	<div class="img"></div>
+                        <div class="date">October 7, 2013</div>
+                        <div class="address">
+                            <a target="_blank" href="#">Coffee Tasting at Toby’s Estate, (Williamsburg, BK)</a>
+                        </div>
+                    </div>
+                    <div id="row" class="row2">
+                        <div class="img"></div>
+                        <div class="date">October 1, 2013</div>
+                        <div class="address">
+                            <a target="_blank" href="#">Café Review – The Bean</a>
+                        </div>
+                    </div>
+                    <div id="row" class="row3">
+                    	<div class="img"></div>
+                        <div class="date">September 29, 2013</div>
+                        <div class="address">
+                            <a target="_blank" href="#">Happy National Coffee Day!</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             
             <footer id="footer">

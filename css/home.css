@@ -1,0 +1,322 @@
+
+#slideshow
+{
+	position:relative;
+	top:73px;
+	left:0px;
+	height:180px;
+	width:100%;
+	z-index:50;
+	display:block;
+}
+
+#slideshow img
+{
+	position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+	height:180px;
+	width:100%;
+}
+
+#slideshow img.active {
+    z-index:10;
+	opacity:1.0;
+}
+
+#slideshow img.last-active {
+    z-index:9;
+}
+
+.slidedescription
+{
+	position:absolute;
+	text-align:center;
+	width:100%;
+	padding:0px;
+	top:110px;
+	left:0px;
+	display:block;
+	z-index:95;
+}
+
+h2
+{
+	color:rgb(255, 255, 255);
+	font-size:2.2em;
+	text-shadow:1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.slidedescription h2 .top
+{	
+	font-family: sans-serif;
+	font-style:normal;
+	font-weight:200;
+}
+
+.slidedescription h2 .bottom
+{
+	font-weight:900;
+	font-style:normal;
+}
+
+.learnmorebutton
+{
+	position: relative;
+	top: 29px;
+
+}
+
+.learnmorebutton a
+{
+	background:none repeat scroll 0% 0% rgb(95, 200, 219);
+	padding:20px 32px;
+	color:rgb(255, 255, 255);
+	font-family: sans-serif;
+	font-style:normal;
+	font-weight:700;
+	font-size:1em;
+	letter-spacing:0.08em;
+	text-shadow:1px 1px 1px rgba(0, 0, 0, 0.08);
+	text-transform:uppercase;
+	box-shadow:1px 1px 1px rgba(0, 0, 0, 0.2);
+	text-decoration:none;
+}
+
+.textbanner
+{	position: relative;
+	top: 73px;
+	width:100%;
+	height: 170px;
+	background: url(../img/bg_blue-pattern.gif) repeat;
+	margin-bottom: 36px;
+}
+
+.textbanner p
+{	
+	position: absolute;
+	top: 10%;
+	left: 25%;
+	font-size: 1.6em;
+	width: 55%;
+	line-height: 1.4em;
+	text-align: center;
+
+}
+
+.textbanner p a {
+	color: #B13279;
+}
+
+.textbanner p a:hover {
+	color: #7C1457;
+}
+
+.content-container {
+	position: relative;
+	top:100px;
+	height: 800px;
+	width:100%;
+	text-align:center;
+}
+
+.content-container .content-item {
+	float:left;
+	width:300px;
+	height:260px;
+	position:relative;
+	left:10%;
+	margin-right:2%;
+	margin-bottom: 2%;
+}
+
+.content-container .overlay {
+    background: none repeat scroll 0 0 #000000;
+    height: 260px;
+    opacity: 0.3;
+    position: absolute;
+    width: 300px;
+}
+.content-container .title {
+	position:absolute;
+	font-size:200%;
+	width:100%;
+	top:43%;
+}
+.content-container .title a {
+	color:#FFF;
+}
+
+.content-container .details {
+	position:absolute;
+    top: 55px;
+    text-align: center;
+    width: 300px;
+}
+.content-container .details a {
+	color: #FFFFFF;
+	font-size: 16px;
+	line-height:30px;
+}
+.content-container .action {
+	text-align: center;
+    text-transform: uppercase;
+	position:absolute;
+	top:180px;
+	left:65px;
+}
+
+.content-container #action-learnmore {
+	left: 90px;
+}
+
+.content-container .action a {
+	background: none repeat scroll 0 0 #B13279;
+	padding: 12px 20px;
+	font-size: 12px;
+	color:#FFF;
+}
+
+
+.content-container .title-blog {
+	background:none repeat scroll 0 0 #000;
+	font-size: 200%;
+	width: 100%;
+	height: 35px;
+	color: white;
+	padding-top: 6px;
+}
+.content-container .bHover2 {
+	margin-top:20px;
+	margin-left:10%;
+}
+.content-container #row {
+	width:100%;
+	text-align:left;
+	margin-top:31px;
+}
+.content-container .row3 {
+	padding-top:12px;
+}
+.content-container .img {
+	height:54px;
+	width:54px;
+	background:none repeat scroll 0 0 #EEEEEE;
+	position:absolute;
+}
+
+.content-container .date {
+	color: #6D6E71;
+	font-size: 11px;
+    text-transform: uppercase;
+	margin-left:23%;
+}
+.content-container .address {
+	margin-left:23%;
+}
+.content-container .address a {
+	color: #B13279;
+	font-size:12px;
+}
+.content-container .address a:hover {
+	color:#7C1457;
+}
+
+
+/*------------------------for ipad------------------------------------*/
+@media screen and (min-width: 42em ) {
+
+#slideshow {
+	height: 420px;
+	top: 132px;
+}
+
+#slideshow img {
+	height: 420px;
+}
+
+.slidedescription
+{
+	top:250px;
+}
+
+h2
+{
+	font-size:4.3em;
+}
+
+.learnmorebutton
+{
+	top: 70px;
+
+}
+
+.learnmorebutton a
+{
+	font-size:1.4em;
+}
+
+.textbanner
+{
+	top: 132px;
+	height: 100px;
+}
+.textbanner p
+{	
+	top: 14%;
+
+}
+
+.content-container {
+	height: 545px;
+}
+
+}
+
+/*------------------------------for desktop------------------------------*/
+@media screen and (min-width: 64em ) {
+
+#slideshow {
+	top: 73px;
+}
+
+.slidedescription
+{
+	top: 170px;
+}
+
+h2
+{
+	font-size:4.8em;
+}
+
+.learnmorebutton
+{
+	top: 70px;
+
+}
+
+.learnmorebutton a
+{
+	font-size:1.6em;
+}
+
+.textbanner
+{
+	top: 73px;
+}
+
+.textbanner p
+{	
+	top: 20%;
+
+}
+
+.content-container {
+	height: 270px;
+}
+
+}
+
+

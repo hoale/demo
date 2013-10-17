@@ -1,11 +1,14 @@
+* {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
 
 * {
 	margin: 0;
 	padding: 0;
 }
-html, body {
-	height: 100%;
-}
+
 body {
 	font-family: Arial, Verdana, sans-serif;
 	font-size: 62.5%;
@@ -17,27 +20,19 @@ body {
  	text-decoration: none;
  }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section ,div {
-	display: block;
-}
-img {
+ img {
 	max-width: 100%;
 }
 
-.wrapper {
-	position: relative;
-	width: 75%;
-	margin: 0 auto;
-	padding: 0;
-
+.hide {
+	display: none;
 }
+
 #container {
 	width: 100%;
 	background: #fff;
-	min-height: 100%;
-	height: auto !important;
+	min-height:100%;
+	height: auto;
 	position: relative;
 	margin: 0 auto;
 
@@ -51,41 +46,78 @@ img {
 	background: #fff;
 	z-index: 900;
 }
+#header.wrapper {
+	width: 100%;
+	padding:0;
+}	
+
+#logo  {
+	width: 100%;
+	border: 0;
+}
 
 #logo a {
-	float: left;
-	display: inline;
-	margin: 0px 0 0px 0px;
+	display: block;
+	float: none;
+	margin: 0px 0 22px 15px;
 	padding: 0px 0 0px 0px;
-	width: 269px;
-	height: 39px;
+	width:213px;
+	height: 31px;
 }
-/* tạo dropdown menu*/
+
+.menu-toggle {
+	-webkit-transform: translate3d(0, 0, 0);
+	top: 25px;
+	right: 4%;
+	position: absolute;
+	display: block;
+	background: url(../img/icon_menu_toggle.gif) no-repeat top left;
+	width: 20px;
+	height: 17px;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+
 .navigation {
 	position: relative;
 	font-style: normal;
-	float: right;
-	font-size: 1.4em;
-	font-weight: 400;
+	float: none;
+	width: 100%;
 	margin: 0 0 0 0;
-}
-.navigation ul, .navigation li {
 
-	list-style-type: none; padding:0; margin: 0; display: inline;
 }
-.navigation ul li.top-menu {
-	float: left;
+
+.navigation >ul
+{
+	margin: 0 auto;
+	width: 100%;
+	padding: 0;
+	list-style: none;
+}
+
+.navigation li {
+
+	list-style-type: none;
+}
+
+.navigation ul >li.top-menu {
 	position: relative;
-	height:54px;
-
+	border-bottom: 1px dashed #828282;
+	z-index: 9999;
+	padding: 15px;
 }
+
 .navigation ul li.top-menu >a{
+	width: 92%;
+	padding: 14px 4%;
 	color:  #505050;
-	display: block;
-	padding: 16px;
 	text-decoration: none;
-
+	font-style: normal;
+	font-size: 1.5em;
+	margin: 0;
+	top: 18px;
 }
+
 .navigation li.top-menu:last-child a{
 	color: #B13279;
 }
@@ -97,331 +129,50 @@ img {
 .navigation li.top-menu:last-child:hover a {
 	color:#46423C;
 }
-.navigation ul ul{
-	position:absolute;
-    background:transparent;
-    padding: 3px;
-    display: none;
-    top:100%;
-    width: 750px;
-	left: -910%;
-	z-index: 999;
-}
-.navigation ul ul.service {
-	left: -715%;
-}
-.navigation > ul > li.top-menu:hover > ul {  display: block;}
 
-.navigation ul li ul >li{
-	float: left;
-	padding: 10px;
-}
-
-.navigation ul li ul.about li{
+.navigation li.top-menu ul {
+	margin-top: 10px;
+	display: none;
 	position: relative;
-	float: left;
-	left: 400px;
-}
-.navigation ul li ul.service li{
-	position: relative;
-	float: left;
-	left: 450px;
+	width: 100%;
+	padding: 0;
+	top: 0;
+
 }
 
-.navigation ul li ul >li a{
+.navigation li.top-menu ul li {
+	height: 35px;
+}
+
+.navigation li.top-menu ul li a {
 	color: #808082 ;
-	font-size: 1.1em;
-	padding: 4px 17px 0 3px;
-	border-right: 1px solid #747171;
-
-}
-.navigation ul li ul li:last-child a {
-	border-right: 0px;
+	font-size: 1.4em;
+	padding:9px 10% 9px 40px;
+	background:url(../img/icon_menu-arrow-right.gif) no-repeat 25px center;
 }
 
-.navigation li .icon-menu {
-	position:absolute;
-	background: url(http://www.joyridecoffeedistributors.com/img/icon_menu-arrow.gif) no-repeat top center;
-	left: 33px;
-	bottom: 10px;
-	margin: 0 auto;
-	height: 6px;
-	width: 10px;
-	display: none;
-
-}
-.navigation li:hover .icon-menu { display: block;}
-
-.navigation ul li ul li:hover >a{
-	color: white;
+.navigation li.top-menu ul li a:hover{
+	color: #71C2F5;
 }
 
-.sub-background {
-	position: absolute;
-	width: 100%;
-	background: black;
-	display: none;
-	opacity: 0.9;
-	height: 42px;
-	top:100%;
-}
-
-
-/* slide show*/
-.slides-overlay {
-	position: absolute;
-	width: 100%;
-	background: black;
-	display: none;
-	opacity: 0.4;
-	height: 413px;
-	top:100%;
-	z-index: 900;
-}
-
-#slideshow
-{
-	position:relative;
-	top:67px;
-	left:0px;
-	height:420px;
-	width:100%;
-	z-index:50;
-	display:block;
-}
-
-#slideshow img
-{
-	position:absolute;
-    top:0;
-    left:0;
-    z-index:8;
-    opacity:0.0;
-	height:420px;
-	width:100%;
-}
-
-#slideshow img.active {
-    z-index:10;
-	opacity:1.0;
-}
-
-#slideshow img.last-active {
-    z-index:9;
-}
-
-.slidedescription
-{
-	position:absolute;
-	text-align:center;
-	width:100%;
-	padding:0px;
-	top:180px;
-	left:0px;
-	display:block;
-	z-index:95;
-}
-
-h2
-{
-	color:rgb(255, 255, 255);
-	font-size:4.7em;
-	text-shadow:1px 1px 2px rgba(0, 0, 0, 0.3);
-	font-weight:normal;
-	padding:5px;
-}
-.slidedescription h2 .top
-{
-	font-family: sans-serif;
-	font-style:normal;
-	font-weight:200;
-}
-
-.slidedescription h2 .bottom
-{
-	font-weight:900;
-	font-style:normal;
-}
-
-.learnmorebutton
-{
-	position: relative;
-	top: 45px;
-}
-
-.learnmorebutton a
-{
-	background:none repeat scroll 0% 0% rgb(95, 200, 219);
-	padding:20px 32px;
-	color:rgb(255, 255, 255);
-	font-family: sans-serif;
-	font-style:normal;
-	font-weight:700;
-	font-size:2em;
-	letter-spacing:0.08em;
-	text-shadow:1px 1px 1px rgba(0, 0, 0, 0.08);
-	text-transform:uppercase;
-	box-shadow:1px 1px 1px rgba(0, 0, 0, 0.2);
-	text-decoration:none;
-}
-
-/* slides text */
-.textbanner
-{	position: relative;
-	top: 67px;
-	width:100%;
-	height: 94px;
-	background: url(http://www.joyridecoffeedistributors.com/img/bg_blue-pattern.gif) repeat;
-	margin-bottom: 36px;
-}
-
-.textbanner p
-{	
-	position: absolute;
-	top: 20%;
-	left: 25%;
-	font-size: 1.6em;
-	width: 55%;
-	line-height: 1.4em;
-	text-align: center;
-
-}
-
-.textbanner p a {
-	color: #B13279;
-}
-.textbanner p a:hover {
-	color: #7C1457;
-}
-
-/* content */
-
-#content {
-	margin-top:100px;
-	width:100%;
-	text-align:center;
-}
-#content #div{
-	float:left;
-	width:300px;
-	height:260px;
-	position:relative;
-	margin-bottom:20px;
-	left:10%;
-	margin-left:2%;
-}
-#content .overlay {
-    background: none repeat scroll 0 0 #000000;
-    height: 260px;
-    opacity: 0.3;
-    position: absolute;
-    width: 300px;
-}
-#content #title {
-	position:absolute;
-	font-size:200%;
-	width:100%;
-}
-#content #title a {
-	color:#FFF;
-}
-#content #tHover {
-	position:absolute;
-    margin-top: 55px;
-    padding: 0 36px;
-    text-align: center;
-    width: 228px;
-	visibility:hidden;
-}
-#content #tHover a {
-	color: #FFFFFF;
-	font-size: 16px;
-	line-height:30px;
-}
-#content #bHover {
-	text-align: center;
-    text-transform: uppercase;
-	position:absolute;
-	top:180px;
-	left:60px;
-	visibility:hidden;
-}
-#content #bHover a {
-	background: none repeat scroll 0 0 #B13279;
-	padding: 12px 20px;
-	font-size: 12px;
-	color:#FFF;
-}
-#content .title1 {
-	top:43%;
-}
-
-#content .title2 {
-	top:43%;
-}
-
-#content .title3 {
-	background:none repeat scroll 0 0 #000;
-}
-#content .bHover2 {
-	margin-top:20px;
-	margin-left:10%;
-}
-#content #row {
-	width:100%;
-	text-align:left;
-	margin-top:40px;
-}
-#content .row3 {
-	padding-top:12px;
-}
-#content .img {
-	height:54px;
-	width:54px;
-	background:none repeat scroll 0 0 #EEEEEE;
-	position:absolute;
-}
-
-#content .date {
-	color: #6D6E71;
-	font-size: 11px;
-    text-transform: uppercase;
-	margin-left:23%;
-}
-#content .address {
-	margin-left:23%;
-}
-#content .address a {
-	color: #B13279;
-	font-size:12px;
-}
-#content .address a:hover {
-	color:#7C1457;
-}
 /* footer */
 #footer {
-	clear:both;
 	position: relative;
 	width: 100%;
-	top: 90px;
-	height: 136px;
+	height: 150px;
+	top: 132px;
 	background: #282828;
 }
 
-#footer .content-footer{
-	height: 136px;
-	position: relative;
-	font-family: sans-serif;
-}
 /* footer left*/
 
 #footer .left {
-	height: 23px;
+	height: 55px;
 }
 
 #footer .left ul {
 	list-style: none;
-	padding-top:15px;
+	padding:20px;
 }
 
 #footer .left ul li {
@@ -454,7 +205,7 @@ h2
 	float: left;
 	width: 23px;
 	height: 23px;
-	background: url(http://www.joyridecoffeedistributors.com/img/icon_social-media.gif) no-repeat top left;
+	background: url(../img/icon_social-media.gif) no-repeat top left;
 	padding: 0;
 	text-indent: -9999px;
 }
@@ -470,12 +221,13 @@ h2
 	background-position: -32px -23px;
 }
 /*footer right*/
-#footer .right {
-	float: right;
+#footer .right {	
+	margin: 16px;
 	width: 200px;
 }
 
 #footer .right p{
+	margin-right: 5px;
 	float: right;
 	font-size: 1.4em;
 	color: #808082;
@@ -488,7 +240,7 @@ h2
 /* footer copyright */
 #footer p.copyright {
 	position: absolute;
-	left: 15px;
+	left: 20px;
 	bottom: 15px;
 	font-size: 1.3em;
 	color: #6D6E71;
@@ -499,3 +251,202 @@ h2
 #footer p.copyright a {
 	color: #5FC8DB;
 }
+
+/*------------------------for ipad------------------------------------*/
+@media screen and (min-width: 42em ) {
+
+#logo  {
+	width: 100%;
+	border-bottom: dashed 1px #828282;
+
+}
+#logo a {
+	margin: 0 auto 18px;
+	width: 269px;
+	height: 39px
+}
+.menu-toggle {
+	display: none;
+}
+
+.navigation {
+	display: block !important;
+}
+
+.navigation ul
+{
+	width: 620px;
+} 
+
+.navigation ul >li.top-menu {
+	float: left;
+	position: relative;
+	height:54px;
+	border-bottom: 0;
+	padding: 0;
+
+}
+.navigation ul li.top-menu >a{
+	float: left;
+	display: block;
+	padding: 15px 26px 22px;
+	width: 100%;
+	top:0;
+}
+
+.navigation li.top-menu ul{
+	position:absolute;
+    background:transparent;
+    padding: 3px;
+    top:100%;
+    width: 750px;
+	left: -400px;
+	z-index: 999;
+	margin-top: 0;
+	display: none;
+}
+.navigation ul ul.service {
+	left: -490px;
+}
+.navigation > ul > li.top-menu:hover > ul {  display: block;}
+
+.navigation ul li ul >li{
+	float: left;
+	padding: 10px;
+}
+
+.navigation ul li ul.about li{
+	position: relative;
+	float: left;
+	left: 400px;
+}
+
+.navigation ul li ul.service li{
+	position: relative;
+	float: left;
+	left: 450px;
+}
+
+.navigation li.top-menu ul li {
+	height: 0;
+}
+
+.navigation li.top-menu ul li a {
+	padding: 4px 17px 0 3px;
+	border-right: 1px solid #747171;
+	background: 0;
+
+}
+.navigation ul li ul li:last-child a {
+	border-right: 0px;
+}
+
+.navigation li .icon-menu {
+	position:absolute;
+	background: url(http://www.joyridecoffeedistributors.com/img/icon_menu-arrow.gif) no-repeat top center;
+	left: 42px;
+	bottom: 10px;
+	margin: 0 auto;
+	height: 6px;
+	width: 10px;
+	display: none;
+
+}
+.navigation li:hover .icon-menu { display: block;}
+
+.navigation ul li ul li:hover >a{
+	color: white;
+}
+
+.sub-background {
+	position: absolute;
+	width: 100%;
+	background: black;
+	display: none;
+	opacity: 0.9;
+	height: 42px;
+	top:100%;
+}
+
+
+/* slide show*/
+.slides-overlay {
+	position: absolute;
+	width: 100%;
+	background: black;
+	display: none;
+	opacity: 0.4;
+	height: 420px;
+	top:132px;
+	z-index: 860;
+}
+
+#footer .right {	
+	position: relative;
+	float: right;
+	top: -40px;
+}
+
+}
+
+/*------------------------------for desktop------------------------------*/
+@media screen and (min-width: 64em ) {
+
+
+.wrapper {
+	position: relative;
+	margin: 0 auto;
+	width: 75%;
+}
+
+#logo {
+	width: 293px;
+	border-bottom: 0;
+}	
+#logo a {
+	float: left;
+	display: inline;
+	margin: 0px 0 0px 0px;
+	padding: 0px 0 0px 0px;
+}
+
+.navigation {
+	width: 488px;
+	float: right;
+	left: 5%;
+}
+
+.navigation ul {
+	display: inline;
+}
+
+.navigation ul li.top-menu >a{
+	padding: 16px;
+}
+.navigation li.top-menu ul {
+	left: -550px;
+}
+
+.navigation li:hover .icon-menu { display: block;}
+
+.navigation ul li ul li:hover >a{
+	color: white;
+}
+
+.slides-overlay {
+	position: absolute;
+	width: 100%;
+	background: black;
+	display: none;
+	opacity: 0.4;
+	height: 419px;
+	top:74px;
+	z-index: 100;
+}
+
+#footer p.copyright {
+	bottom: -80px;
+}
+
+}
+

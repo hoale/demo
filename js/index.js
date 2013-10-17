@@ -19,6 +19,20 @@ $(function() {
         slideSwitch();
     }, 5000);
 
+
+    $('.parent-menu,.sub-background').hover(function() {
+        $('.sub-background').show();
+    }, function() {
+        $('.sub-background').hide();    
+    })
+
+    $('.parent-menu').hover(function() {
+        $('.slides-overlay').show();
+    }, function() {
+        $('.slides-overlay').hide();
+    })
+    
+
     $('.parent-menu,.sub-background').hover(function() {
         $('.sub-background').show();
     }, function() {
@@ -31,30 +45,34 @@ $(function() {
         $('.slides-overlay').hide();
     })
 
-    $(".div1").mouseover(function()
-    {
-        $(".title1").css({"visibility":"hidden"});
-        $(".tHover1 a").css({"visibility":"visible"});
-        $(".bHover1 a").css({"visibility":"visible"});
+    $('.content-item').hover(function() {
+        $(this).find('.title').hide();
+        $(this).find('.details').show();
+        $(this).find('.action').show();
+    }, function() {
+        $(this).find('.title').show();
+        $(this).find('.details').hide();
+        $(this).find('.action').hide();       
     })
-    $(".div1").mouseout(function()
-    {
-        $(".title1").css({"visibility":"visible"});
-        $(".tHover1 a").css({"visibility":"hidden"});
-        $(".bHover1 a").css({"visibility":"hidden"});
+
+
+    $("#icon-menu").click(function(){
+        $('.hide').slideToggle("fast");
     })
-    $(".div2").mouseover(function()
-    {
-        $(".title2").css({"visibility":"hidden"});
-        $(".div2 .tHover2").css({"visibility":"visible"});
-        $(".div2 .bHover2").css({"visibility":"visible"});
+
+    $(".top-menu ul").hide();
+
+    $(".top-menu").click(function(e){
+
+        e.preventDefault();
+        //hide all ul
+        var $this = $(this).find('ul');
+        $(".top-menu ul").not($this).hide();
+
+        $this.toggle();
+
     })
-    $(".div2").mouseout(function()
-    {
-        $(".title2").css({"visibility":"visible"});
-        $(".div2 .tHover2").css({"visibility":"hidden"});
-        $(".div2 .bHover2").css({"visibility":"hidden"});
-    })
+
 
 
 });
