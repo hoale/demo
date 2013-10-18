@@ -160,15 +160,11 @@ body {
 	position: relative;
 	width: 100%;
 	height: 150px;
-	top: 132px;
+	margin-top: 25px;
 	background: #282828;
 }
 
 /* footer left*/
-
-#footer .left {
-	height: 55px;
-}
 
 #footer .left ul {
 	list-style: none;
@@ -222,12 +218,11 @@ body {
 }
 /*footer right*/
 #footer .right {	
-	margin: 16px;
+	margin: 34px 0 0 10px;
 	width: 200px;
 }
 
 #footer .right p{
-	margin-right: 5px;
 	float: right;
 	font-size: 1.4em;
 	color: #808082;
@@ -381,16 +376,19 @@ body {
 	z-index: 860;
 }
 
+#footer .left {
+	float: left;
+}
+
 #footer .right {	
-	position: relative;
 	float: right;
-	top: -40px;
+	margin:27px;
 }
 
 }
 
 /*------------------------------for desktop------------------------------*/
-@media screen and (min-width: 70em ) {
+@media screen and (min-width: 65em ) {
 
 
 .wrapper {
@@ -444,8 +442,12 @@ body {
 	z-index: 100;
 }
 
+.navigation li .icon-menu {
+	left: 33px;
+}
+
 #footer p.copyright {
-	bottom: -80px;
+	bottom: -130px;
 }
 
 }

@@ -20,29 +20,15 @@ $(function() {
     }, 5000);
 
 
-    $('.parent-menu,.sub-background').hover(function() {
+    $('.parent-menu').hover(function(e) {
+
+        e.preventDefault();
         $('.sub-background').show();
-    }, function() {
-        $('.sub-background').hide();    
-    })
-
-    $('.parent-menu').hover(function() {
         $('.slides-overlay').show();
-    }, function() {
-        $('.slides-overlay').hide();
-    })
-    
-
-    $('.parent-menu,.sub-background').hover(function() {
-        $('.sub-background').show();
-    }, function() {
-        $('.sub-background').hide();
-    })
-
-    $('.parent-menu').hover(function() {
-        $('.slides-overlay').show();
-    }, function() {
-        $('.slides-overlay').hide();
+    }, function(e) {
+        e.preventDefault();
+        $('.sub-background').hide(); 
+        $('.slides-overlay').hide();   
     })
 
     $('.content-item').hover(function() {
@@ -63,13 +49,20 @@ $(function() {
     $(".top-menu ul").hide();
 
     $(".top-menu").click(function(e){
+        if (!$(this).hasClass('clickable')) {
+            e.preventDefault();   
+        } 
+        
 
-        e.preventDefault();
+        if($("#icon-menu").is(":visible")) {
         //hide all ul
         var $this = $(this).find('ul');
         $(".top-menu ul").not($this).hide();
 
         $this.toggle();
+
+    }
+        
 
     })
 
