@@ -225,7 +225,7 @@ h2
 
 
 /*------------------------for ipad------------------------------------*/
-@media screen and (min-width: 50em ) {
+@media screen and (min-width: 42em ) {
 
 #slideshow {
 	height: 420px;
@@ -275,7 +275,7 @@ h2
 }
 
 /*------------------------------for desktop------------------------------*/
-@media screen and (min-width: 64em ) {
+@media screen and (min-width: 67em ) {
 
 #slideshow {
 	top: 73px;
