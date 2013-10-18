@@ -38,9 +38,8 @@ $(function() {
     }, function() {
         $(this).find('.title').show();
         $(this).find('.details').hide();
-        $(this).find('.action').hide();       
+        $(this).find('.action').hide();     
     })
-
 
     $("#icon-menu").click(function(){
         $('.hide').slideToggle("fast");
