@@ -253,7 +253,7 @@ body {
 }
 
 /*------------------------for ipad------------------------------------*/
-@media screen and (min-width: 42em ) {
+@media screen and (min-width: 50em ) {
 
 #logo  {
 	width: 100%;
