@@ -275,7 +275,7 @@ h2
 }
 
 /*------------------------------for desktop------------------------------*/
-@media screen and (min-width: 67em ) {
+@media screen and (min-width: 70em ) {
 
 #slideshow {
 	top: 73px;
