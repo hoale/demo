@@ -1,8 +1,4 @@
 /*------------------------mobile------------------------------------*/
-.wrap {
-	width: 440px;
-	padding: 0 20px;
-}
 .banner
 {
 	position: relative;
@@ -160,6 +156,7 @@
 	font-size:200%;
 	width:100%;
 	top:43%;
+	left: 11%;
 }
 #content .title a {
 	color:#FFF;
@@ -194,10 +191,6 @@
 	font-size: 12px;
 	color:#FFF;
 }
-
-
-
-
 
 /*------------------------for ipad------------------------------------*/
 @media screen and (min-width: 712px ) {

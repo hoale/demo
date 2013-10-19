@@ -1,4 +1,4 @@
-// JavaScript Document/*!
+/*!
  * jQuery JavaScript Library v2.0.3
  * http://jquery.com/
  *
@@ -635,7 +635,6 @@ jQuery.extend({
 
 	merge: function( first, second ) {
 		var l = second.length,
-
 			i = first.length,
 			j = 0;
 
@@ -1365,7 +1364,6 @@ setDocument = Sizzle.setDocument = function( node ) {
 		div.firstChild.className = "i";
 		// Support: Opera<10
 		// Catch gEBCN failure to find non-leading classes
-
 		return div.getElementsByClassName("i").length === 2;
 	});
 
@@ -6503,7 +6501,6 @@ function css_defaultDisplay( nodeName ) {
 	}
 
 	return display;
-
 }
 
 // Called ONLY from within css_defaultDisplay

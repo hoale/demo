@@ -262,6 +262,7 @@ body {
 .wrapper {
 	width: 672px;
 	margin: auto;
+	padding: 0;
 }
 
 #logo  {
@@ -317,7 +318,8 @@ body {
 .navigation ul ul.service {
 	left: -490px;
 }
-.navigation > ul > li.top-menu:hover > ul {  display: block;}
+
+/*.navigation > ul > li.top-menu:hover > ul {  display: block;}*/
 
 .navigation ul li ul >li{
 	float: left;
@@ -352,7 +354,7 @@ body {
 
 .navigation li .icon-menu {
 	position:absolute;
-	background: url(http://www.joyridecoffeedistributors.com/img/icon_menu-arrow.gif) no-repeat top center;
+	background: url(../img/icon_menu-arrow.gif) no-repeat top center;
 	left: 42px;
 	bottom: 10px;
 	margin: 0 auto;
@@ -364,7 +366,7 @@ body {
 .navigation li:hover .icon-menu { display: block;}
 
 .navigation ul li ul li:hover >a{
-	color: white;
+	color: white ;
 }
 
 .sub-background {
@@ -444,8 +446,8 @@ body {
 
 .navigation li:hover .icon-menu { display: block;}
 
-.navigation ul li ul li:hover >a{
-	color: white;
+.navigation ul li ul li:hover a{
+	color: white !important;
 }
 
 .slides-overlay {
