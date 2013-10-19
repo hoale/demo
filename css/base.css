@@ -47,7 +47,7 @@ body {
 	float: left;
 	width: 100%;
 	padding: 20px 0 0 0;
-	position: fixed;
+	position: relative;
 	background: #fff;
 	z-index: 900;
 }
@@ -428,9 +428,8 @@ body {
 }
 
 .navigation {
-	width: 488px;
+	width: 52%;
 	float: right;
-	left: 3%;
 }
 
 .navigation ul {
