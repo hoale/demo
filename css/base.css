@@ -304,6 +304,10 @@ body {
 	top:0;
 }
 
+.navigation ul li ul li:hover a{
+	color: white !important;
+}
+
 .navigation li.top-menu ul{
 	position:absolute;
     background:transparent;
@@ -428,7 +432,7 @@ body {
 }
 
 .navigation {
-	width: 52%;
+	width: 54%;
 	float: right;
 }
 
