@@ -75,6 +75,12 @@ $(function() {
 
     })
 
+    $('.hover').hover(function() {
+        $(this).find('.extended').show();
+    }, function() {
+        $(this).find('.extended').hide();     
+    })
+
 
 
 });
