@@ -1,0 +1,114 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 12px;
+	line-height: 1.4em;
+	color: #333;
+}
+
+body.login {
+	background: #fff;
+}
+
+#login {
+	width: 320px;
+	margin: auto;
+	padding: 114px 0 ;
+}
+
+.login h1 a img{
+	background-position: top center;
+	width: 300px;
+	height: 45px;
+	padding: 0 0 15px 15px;
+	display: block;
+}
+
+.login form {
+	border-radius: 3px;
+	margin-left: 8px;
+	padding: 26px 24px 46px;
+	font-weight: normal;
+	background: #fff;
+	border: 1px solid #e5e5e5;
+	-moz-box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+	-webkit-box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+	box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+}
+
+.login label {
+	cursor: pointer;
+	color: #777;
+	font-size: 14px;
+}
+
+.login form .input {
+	border-radius: 3px;
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
+	color: #555;
+	font-weight: 200;
+	font-size: 24px;
+	line-height: 1;
+	width: 100%;
+	padding: 3px;
+	margin-top: 2px;
+	margin-right: 6px;
+	margin-bottom: 16px;
+	border: 1px solid #e5e5e5;
+	background: #fbfbfb;
+	outline: 0;
+	-moz-box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+	-webkit-box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+	box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+}
+
+.login form p {
+	margin-bottom: 0;
+}
+
+.login form .forgetmenot {
+	font-weight: normal;
+	float: left;
+}
+
+.login form .forgetmenot label {
+	font-size: 12px;
+	line-height: 19px;
+}
+
+.login input.button-primary {
+	border-radius: 13px;
+	cursor: pointer;
+	font-size: 13px!important;
+	line-height: 16px;
+	padding: 3px 10px;
+	float: right;
+	border-color: rgb(95, 200, 219);
+	font-weight: bold;
+	color: #fff;
+	background: rgb(95, 200, 219);
+	text-shadow: rgba(0,0,0,0.3) 0 -1px 0;
+}
+
+.login #nav {
+	text-shadow: #fff 0 1px 0;
+	margin: 0 0 0 16px;
+	padding: 16px 16px 0;
+	color: #505050;
+}
+.login #nav a {
+	color: #505050;
+}
+
+.login #nav a:hover {
+	color: #B13279;
+}

@@ -8,13 +8,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" type="text/css" href="css/base.css">
-        <link rel="stylesheet" type="text/css" href="css/about-ourstory.css">
-        <script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
-
-</head>
+        <link rel="stylesheet" type="text/css" href="css/about-base.css">
+        <script type="text/javascript" src="js/JQuery.js"></script>
     </head>
     <body>
-        <header id="header">
+        <div id="container">
+            <header id="header" class="clearfix">
                 <div class="wrapper">
                     <h1 id="logo">
                         <a href="index.html">
@@ -47,82 +46,85 @@
                                     <li><a href="service-faq.html">FAQ</a></li>
                                 </ul><!--menu cap 2-->
                             </li>
-                            <li class="top-menu clickable"><a href="#">Coffee</a></li>
-                            <li class="top-menu clickable"><a href="contact.html">Contact</a></li>
-                            <li class="top-menu clickable"><a href="blog.html">Blog</a></li>
-                            <li class="top-menu clickable"><a href="order.html">Order Coffee</a></li>
+                            <li class="top-menu"><a href="#">Coffee</a></li>
+                            <li class="top-menu"><a href="contact.html">Contact</a></li>
+                            <li class="top-menu"><a href="blog.html">Blog</a></li>
+                            <li class="top-menu"><a href="order.html">Order Coffee</a></li>
                         </ul><!--menu cap 1-->
                     </nav>
                 </div><!-- /Wrapper--> 
                 <div class="sub-background"></div>  
             </header><!-- /header-->
-
-            <div class="slides-overlay"></div>
-            <div class="banner">
-                <img src="img/Our_Story.jpg"/>
-                <div class="wrapper text-banner">
-                    <h2>Our Story</h2>
-                </div>
-            </div> 
-            <div id="content" class="wrapper">
-                <div class="content-left">
-                    <h3>We Love Coffee</h3>
-                    <br/>
-                    <p>We started as the city’s first mobile cafe serving Stumptown Coffee, bringing exceptional coffee and espresso drinks to the streets with the Joyride Truck.</p>
-					</br>
-					<p>Now we’re taking our mobile tradition a step further, bringing fresh coffee and cafe quality equipment direct to offices.  We think coffee breaks should be as relaxing, stimulating, and delicious as a trip to any cafe.  Our goal is to provide the best office coffee with the best equipment and superior service..</p>
-					</br>
-					<p><a href="#">Read about the Joyride team »</a></p>
-                </div>
-                <div class="content-right">
-                    <div class="content-item">
-                        <div class="overlay"></div>
-                        <p class="title">
-                            <a href="#">SCHEDULE A TASTING</a>
-                        </p>
-                        <div class="details hide">
-                            <a href="#">
-                                Learn about Joyride's office coffee services – it’s delicious, fun, informative, and free!
-                            </a>
+            <div class="main-content">
+                <div class="slides-overlay"></div>
+                <div class="banner">
+                    <img src="img/Our_Story.jpg"/>
+                    <div class="wrapper text-banner">
+                        <h2>Our Story</h2>
+                    </div>
+                </div> 
+                <div id="content" class="wrapper clearfix">
+                    <div class="content-left">
+                        <h3>We Love Coffee</h3>
+                        <br/>
+                        <p>We started as the city’s first mobile cafe serving Stumptown Coffee, bringing exceptional coffee and espresso drinks to the streets with the Joyride Truck.</p>
+                        </br>
+                        <p>Now we’re taking our mobile tradition a step further, bringing fresh coffee and cafe quality equipment direct to offices.  We think coffee breaks should be as relaxing, stimulating, and delicious as a trip to any cafe.  Our goal is to provide the best office coffee with the best equipment and superior service..</p>
+                        </br>
+                        <p><a href="#">Read about the Joyride team »</a></p>
+                    </div>
+                    <div class="content-right">
+                        <div class="content-item">
+                            <div class="overlay"></div>
+                            <p class="title">
+                                <a href="#">SCHEDULE A TASTING</a>
+                            </p>
+                            <div class="details hide">
+                                <a href="#">
+                                    Learn about Joyride's office coffee services – it’s delicious, fun, informative, and free!
+                                </a>
+                            </div>
+                            <div class="action hide">
+                                <a>Schedule a Tasting</a>
+                            </div>      
+                            <img src="img/Joyride-Coffee_Schedule-A-Tasting.jpg" alt="Schedule a Tasting" />
                         </div>
-                        <div class="action hide">
-                            <a>Schedule a Tasting</a>
-                        </div>      
-                        <img src="img/Joyride-Coffee_Schedule-A-Tasting.jpg" alt="Schedule a Tasting" />
                     </div>
                 </div>
             </div>
-            
             <footer id="footer">
-                <div class=" content-footer wrapper">
-                    <div class="left">
-                        <ul>
-                            <li>
-                                <a href="#">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">Jobs</a>
-                            </li>
-                            <li>
-                                <a href="#">Press</a>
-                            </li>
-                            <li class="social-media facebook">
-                                <a href="http://www.facebook.com/joyridecoffee">Facebook</a>
-                            </li>
-                            <li class="social-media twitter">
-                                <a href="https://twitter.com/#!/joyridecoffee">Twitter</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="right">
-                        <p>Contact Us at <strong>917.670.3314</strong></p>
+                <div class=" content-footer wrapper ">
+                    <div class="footer-top clearfix">
+                        <div class="left clearfix">
+                            <ul>
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">Jobs</a>
+                                </li>
+                                <li>
+                                    <a href="#">Press</a>
+                                </li>
+                                <li class="social-media facebook">
+                                    <a href="http://www.facebook.com/joyridecoffee">Facebook</a>
+                                </li>
+                                <li class="social-media twitter">
+                                    <a href="https://twitter.com/#!/joyridecoffee">Twitter</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <p>Contact Us at <strong>917.670.3314</strong></p>
+                        </div>
                     </div>
                     <p class="copyright">
                         &copy; Copyright 2012 Joyride Coffee Distributors. Site by
                         <a href="http://www.barrelny.com/">Barrel</a>
                     </p>
-                </div>
+                </div>    
             </footer><!-- /footer-->
+            
         </div><!-- /container-->
 
         <script type="text/javascript" src="js/index.js"></script>

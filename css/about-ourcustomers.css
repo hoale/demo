@@ -95,7 +95,8 @@
 	margin:12px;
 }
 #footer {
-	top:180px;
+	position: absolute;
+	margin-top: 230px;
 	z-index:1000;
 }
 /*------------------------for ipad------------------------------------*/
@@ -145,6 +146,10 @@
 .content-container img {
 	padding-top:42px;
 }
+
+#footer {
+	margin-top: 230px;
+}
 /*------------------------------for desktop------------------------------*/
 
 @media screen and (min-width: 1009px ) {
@@ -178,6 +183,10 @@
 }
 .content-container li {
 	margin:20px 30px 20px 0;
+}
+
+#footer {
+	margin-top: 130px;
 }
 }
 

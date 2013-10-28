@@ -10,12 +10,10 @@
         <link rel="stylesheet" type="text/css" href="css/base.css">
         <link rel="stylesheet" type="text/css" href="css/home.css">
         <script type="text/javascript" src="js/JQuery.js"></script>
-
-</head>
     </head>
     <body>
         <div id="container">
-            <header id="header">
+            <header id="header" class="clearfix">
                 <div class="wrapper">
                     <h1 id="logo">
                         <a href="index.html">
@@ -57,119 +55,121 @@
                 </div><!-- /Wrapper--> 
                 <div class="sub-background"></div>  
             </header><!-- /header-->
+            <div class="main-content">
+                <div class="slides-overlay"></div>
+                <div id="slideshow">
+                    <img src="img/slide1.jpg" alt="Slideshow Image 1" class="active"/>
+                    <img src="img/slide2.jpg" alt="Slideshow Image 2"/>
+                    <img src="img/slide3.jpg" alt="Slideshow Image 3"/>
+                    <img src="img/slide4.jpg" alt="Slideshow Image 4"/>
+                    <img src="img/slide5.jpg" alt="Slideshow Image 5"/>             
+                </div><!-- /slideshow-->
+                <div class="slidedescription">
+                    <h2>
+                        <span class="top">The Best Coffees in the World, </span>
+                        <br/>
+                        <span class="bottom">Fueling the Most Innovative Companies in New York.</span>
+                    </h2>
+                        
+                    <div class="learnmorebutton">
+                        <a href="#">Learn More</a>
+                    </div>
+                </div><!-- /slidedescription-->
 
-            <div class="slides-overlay"></div>
-            <div id="slideshow">
-                <img src="img/slide1.jpg" alt="Slideshow Image 1" class="active"/>
-                <img src="img/slide2.jpg" alt="Slideshow Image 2"/>
-                <img src="img/slide3.jpg" alt="Slideshow Image 3"/>
-                <img src="img/slide4.jpg" alt="Slideshow Image 4"/>
-                <img src="img/slide5.jpg" alt="Slideshow Image 5"/>             
-            </div><!-- /slideshow-->
-            <div class="slidedescription">
-                <h2>
-                    <span class="top">Now Introducing Counter Culture's</span>
-                    <br/>
-                    <span class="bottom">Guatemala Finca Nueva Armenia</span>
-                </h2>
-                    
-                <div class="learnmorebutton">
-                    <a href="#">Learn More</a>
-                </div>
-            </div><!-- /slidedescription-->
-
-            <div class="textbanner wrapper">
-                <p>Joyride Coffee Distributors provides premium office coffee delivery and catering to businesses and corporations throughout the New York City metropolitan area.<a href="#">Our story »</a>
-                </p>
-            </div><!-- /texbanner-->
-
-            <section class="content-container wrapper">
-            	<div class="content-item">
-                	<div class="overlay"></div>
-                    <p class="title">
-                        <a href="#">SCHEDULE A TASTING</a>
+                <div class="textbanner wrapper">
+                    <p>Joyride Coffee Distributors provides premium office coffee delivery and catering to businesses and corporations throughout the New York City metropolitan area.<a href="#">Our story »</a>
                     </p>
-                    <div class="details hide">
-                        <a href="#">
-                            Learn about Joyride's office coffee services – it’s delicious, fun, informative, and free!
-                        </a>
+                </div><!-- /texbanner-->
+                <section class="content-container wrapper clearfix">
+                	<div class="content-item">
+                    	<div class="overlay"></div>
+                        <p class="title">
+                            <a href="#">SCHEDULE A TASTING</a>
+                        </p>
+                        <div class="details hide">
+                            <a href="#">
+                                Learn about Joyride's office coffee services – it’s delicious, fun, informative, and free!
+                            </a>
+                        </div>
+                        <div class="action hide">
+                            <a>Schedule a Tasting</a>
+                        </div>      
+                        <img src="img/Joyride-Coffee_Schedule-A-Tasting.jpg" alt="Schedule a Tasting" />
                     </div>
-                    <div class="action hide">
-                        <a>Schedule a Tasting</a>
-                    </div>      
-                    <img src="img/Joyride-Coffee_Schedule-A-Tasting.jpg" alt="Schedule a Tasting" />
-                </div>
-                <div class="content-item">
-                	<div class="overlay"></div>
-                    <p class="title">
-                        <a href="#">OUR ROASTERS</a>
-                    </p>
-                    <div class="details hide">
-                        <a>All of our beans are roasted to order, locally. Our roasters are cherry picked from among the best of New York.</a>
+                    <div class="content-item">
+                    	<div class="overlay"></div>
+                        <p class="title">
+                            <a href="#">OUR ROASTERS</a>
+                        </p>
+                        <div class="details hide">
+                            <a>All of our beans are roasted to order, locally. Our roasters are cherry picked from among the best of New York.</a>
+                        </div>
+                        <div class="action hide" id="action-learnmore">
+                            <a>Learn More</a>
+                        </div>
+                    	<img src="img/Joyride-Coffee_Roasters.jpg" alt="Schedule a Tasting" />    	
                     </div>
-                    <div class="action hide" id="action-learnmore">
-                        <a>Learn More</a>
-                    </div>
-                	<img src="img/Joyride-Coffee_Roasters.jpg" alt="Schedule a Tasting" />    	
-                </div>
-                 <div class="content-item">
-                	<div class="title-blog"><a>From Our Blog</a>
-                    </div>
-                    <div id="row" class="row1">
-                    	<div class="img"></div>
-                        <div class="date">October 7, 2013</div>
-                        <div class="address">
-                            <a target="_blank" href="#">Coffee Tasting at Toby’s Estate, (Williamsburg, BK)</a>
+                     <div class="content-item">
+                    	<div class="title-blog"><a>From Our Blog</a>
+                        </div>
+                        <div id="row" class="row1">
+                        	<div class="img"></div>
+                            <div class="date">October 7, 2013</div>
+                            <div class="address">
+                                <a target="_blank" href="#">Coffee Tasting at Toby’s Estate, (Williamsburg, BK)</a>
+                            </div>
+                        </div>
+                        <div id="row" class="row2">
+                            <div class="img"></div>
+                            <div class="date">October 1, 2013</div>
+                            <div class="address">
+                                <a target="_blank" href="#">Café Review – The Bean</a>
+                            </div>
+                        </div>
+                        <div id="row" class="row3">
+                        	<div class="img"></div>
+                            <div class="date">September 29, 2013</div>
+                            <div class="address">
+                                <a target="_blank" href="#">Happy National Coffee Day!</a>
+                            </div>
                         </div>
                     </div>
-                    <div id="row" class="row2">
-                        <div class="img"></div>
-                        <div class="date">October 1, 2013</div>
-                        <div class="address">
-                            <a target="_blank" href="#">Café Review – The Bean</a>
-                        </div>
-                    </div>
-                    <div id="row" class="row3">
-                    	<div class="img"></div>
-                        <div class="date">September 29, 2013</div>
-                        <div class="address">
-                            <a target="_blank" href="#">Happy National Coffee Day!</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
+                </section>
+            </div>
             
             <footer id="footer">
-                <div class=" content-footer wrapper">
-                    <div class="left">
-                        <ul>
-                            <li>
-                                <a href="#">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">Jobs</a>
-                            </li>
-                            <li>
-                                <a href="#">Press</a>
-                            </li>
-                            <li class="social-media facebook">
-                                <a href="http://www.facebook.com/joyridecoffee">Facebook</a>
-                            </li>
-                            <li class="social-media twitter">
-                                <a href="https://twitter.com/#!/joyridecoffee">Twitter</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="right">
-                        <p>Contact Us at <strong>917.670.3314</strong></p>
+                <div class=" content-footer wrapper ">
+                    <div class="footer-top clearfix">
+                        <div class="left clearfix">
+                            <ul>
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">Jobs</a>
+                                </li>
+                                <li>
+                                    <a href="#">Press</a>
+                                </li>
+                                <li class="social-media facebook">
+                                    <a href="http://www.facebook.com/joyridecoffee">Facebook</a>
+                                </li>
+                                <li class="social-media twitter">
+                                    <a href="https://twitter.com/#!/joyridecoffee">Twitter</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <p>Contact Us at <strong>917.670.3314</strong></p>
+                        </div>
                     </div>
                     <p class="copyright">
                         &copy; Copyright 2012 Joyride Coffee Distributors. Site by
                         <a href="http://www.barrelny.com/">Barrel</a>
                     </p>
-                </div>
+                </div>    
             </footer><!-- /footer-->
+            
         </div><!-- /container-->
 
         <script type="text/javascript" src="js/index.js"></script>

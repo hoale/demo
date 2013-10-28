@@ -22,7 +22,7 @@ $(function() {
 
     $('.parent-menu').hover(function(e) {
         if (!$("#icon-menu").is(":visible")) {
-            $(this).find('ul').show();
+            $(this).find('ul').slideToggle("slow");
             $('.sub-background').show();
             $('.slides-overlay').show();            
         }
@@ -63,9 +63,9 @@ $(function() {
         if($("#icon-menu").is(":visible")) {
             //hide all ul
             var $this = $(this).find('ul');
-            $(".top-menu ul").not($this).hide();
+            $(".top-menu ul").not($this).hide("slow");
 
-            $this.toggle();
+            $this.toggle("slow");
             
             if ($(e.target).parent().find('ul').length > 0) {
                 e.preventDefault();               

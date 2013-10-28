@@ -1,9 +1,9 @@
 
+.main-content {
+	position: relative;
+}
 #slideshow
 {
-	position:relative;
-	top:73px;
-	left:0px;
 	height:180px;
 	width:100%;
 	z-index:50;
@@ -36,7 +36,7 @@
 	text-align:center;
 	width:100%;
 	padding:0px;
-	top:90px;
+	top:20px;
 	left:0px;
 	display:block;
 	z-index:95;
@@ -85,23 +85,20 @@ h2
 }
 
 .textbanner
-{	position: relative;
-	top: 73px;
+{
 	width:100%;
-	height: 230px;
 	background: url(../img/bg_blue-pattern.gif) repeat;
-	margin-bottom: 36px;
+	
 }
 
 .textbanner p
 {	
-	position: absolute;
-	top: 10%;
-	left: 25%;
 	font-size: 1.6em;
-	width: 55%;
+	width: 300px;
 	line-height: 1.4em;
 	text-align: center;
+	padding: 10px;
+	margin-left: 10%;
 
 }
 
@@ -114,29 +111,26 @@ h2
 }
 
 .content-container {
-	position: relative;
-	height: 800px;
 	text-align:center;
-	margin-top: 100px;
-	padding-left: 10%;
+	margin-top: 20px;
 }
 
 .content-container .content-item {
-	float:left;
-	width:300px;
-	height:260px;
+	width:240px;
+	height:208px;
 	position:relative;
 	margin-right:2%;
 	margin-bottom: 2%;
+	margin-left: 15%;
 
 }
 
 .content-container .overlay {
     background: none repeat scroll 0 0 #000000;
-    height: 260px;
+    height: 208px;
     opacity: 0.3;
     position: absolute;
-    width: 300px;
+    width: 240px;
 }
 .content-container .title {
 	position:absolute;
@@ -149,6 +143,7 @@ h2
 }
 
 .content-container .details {
+	opacity: 0;
 	position:absolute;
     top: 55px;
     text-align: center;
@@ -160,15 +155,12 @@ h2
 	line-height:30px;
 }
 .content-container .action {
+	opacity: 0;
 	text-align: center;
     text-transform: uppercase;
 	position:absolute;
 	top:180px;
 	left:65px;
-}
-
-.content-container #action-learnmore {
-	left: 90px;
 }
 
 .content-container .action a {
@@ -220,13 +212,53 @@ h2
 	color:#7C1457;
 }
 
+@media screen and (min-width: 476px) {
+	
+.content-container .content-item {
+	width:300px;
+	height:260px;
+	margin-left: 25%;
+}
+
+.textbanner p
+{	
+	
+	margin-left: 25%;
+
+}
+
+.textbanner p a {
+	color: #B13279;
+}
+
+.textbanner p a:hover {
+	color: #7C1457;
+}
+
+.content-container .overlay {
+    height: 260px;
+    width: 300px;
+}
+
+.content-container .details {
+	opacity: 1;
+}
+.content-container .action {
+	opacity: 1;
+}
+
+.content-container #action-learnmore {
+	left: 90px;
+}
+
+}
+
 
 /*------------------------for ipad------------------------------------*/
 @media screen and (min-width: 712px) {
 
 #slideshow {
 	height: 420px;
-	top: 132px;
 }
 
 #slideshow img {
@@ -235,7 +267,7 @@ h2
 
 .slidedescription
 {
-	top:250px;
+	top: 146px;
 }
 
 h2
@@ -245,7 +277,7 @@ h2
 
 .learnmorebutton
 {
-	top: 70px;
+ 	top: 70px;
 
 }
 
@@ -254,21 +286,24 @@ h2
 	font-size:1.4em;
 }
 
-.textbanner
-{
-	top: 132px;
+.textbanner {
 	height: 100px;
 }
+
 .textbanner p
 {	
-	top: 14%;
-
+	width: 615px;
+	padding: 20px;
+	margin-left: 10%;
 }
 
 .content-container {
-	height: 545px;
-	margin-top: 160px;
-	padding-left: 0;
+	margin-top: 50px;
+}
+
+.content-container .content-item {
+	float: left;
+	margin-left: 0;
 }
 
 .content-container .content-item:last-child {
@@ -280,13 +315,9 @@ h2
 /*------------------------------for desktop------------------------------*/
 @media screen and (min-width: 1009px) {
 
-#slideshow {
-	top: 73px;
-}
-
 .slidedescription
 {
-	top: 170px;
+	
 }
 
 h2
@@ -296,7 +327,7 @@ h2
 
 .learnmorebutton
 {
-	top: 70px;
+	
 
 }
 
@@ -305,20 +336,11 @@ h2
 	font-size:1.6em;
 }
 
-.textbanner
-{
-	top: 73px;
-}
 
 .textbanner p
-{	
-	top: 20%;
-
-}
-
-.content-container {
-	height: 270px;
-	margin-top: 100px;
+{		
+	width: 835px;
+	margin-left: 18%;
 }
 
 .content-container .content-item {

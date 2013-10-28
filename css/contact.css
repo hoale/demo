@@ -1,68 +1,5 @@
 /*------------------------mobile------------------------------------*/
 
-.banner
-{
-	position: relative;
-	left: 0px;
-	width: 100%;
-	z-index: 0;
-	display: block;
-}
-
-.banner img
-{
-	height: 180px;
-	width: 100%;
-}
-
-.text-banner h2 {
-	position: relative;
-	width: 75%;
-	top: -75px;
-	left: 25px;
-	font-family: sans-serif;
-	font-style: normal;
-	font-weight: 700;
-	font-size: 3em;
-	color: #fff;
-}
-
-/* content */
-
-#content {
-	height: 800px;
-	padding-left: 10%;
-}
-
-#content .content-left
-{
-	width: 70%;
-}
-
-#content .content-left h3
-{
-	font-family:sans-serif;
-	font-style:normal;
-	font-weight:700;
-	padding:0px 0 0px 0;
-	margin:0 0 20px 0;
-	font-size:2.8em;
-	line-height:1.2em;
-	color:#323232;
-}
-
-#content .content-left p
-{
-	font-size: 1.6em;
-	font-style:normal;
-	font-family: sans-serif;
-	font-weight: 400;
-	line-height: 1.4em;
-	color: #3A3A3A;
-	padding:0px 0px 0px 0px;
-	margin:0 0 12px 0;
-	text-indent:0px;
-}
 #content .content-left p:last-child {
 	padding-bottom: 10px;
 	border-bottom: dashed 1px #828282;
@@ -125,59 +62,7 @@
 	cursor:pointer;
 }
 
-#content .content-item {
-	float:left;
-	width:240px;
-	height:240px;
-	position:relative;
-}
-
-#content .overlay {
-    background: none repeat scroll 0 0 #000000;
-    height: 208px;
-    opacity: 0.3;
-    position: absolute;
-    width: 240px;
-}
-#content .title {
-	position:absolute;
-	font-size:200%;
-	width:100%;
-	top:43%;
-}
-#content .title a {
-	color:#FFF;
-}
-
-#content .details {
-	opacity: 0;
-	position:absolute;
-    top: 55px;
-    text-align: center;
-    width: 300px;
-}
-#content .details a {
-	color: #FFFFFF;
-	font-size: 16px;
-	line-height:30px;
-}
-#content .action {
-	opacity: 0;
-	text-align: center;
-    text-transform: uppercase;
-	position:absolute;
-	top:180px;
-	left:65px;
-}
-
 @media screen and (min-width: 476px) {
-
-/* content */
-
-#content {
-	height: 850px;
-	padding-left: 15%;
-}
 
 #content .group input{
 	width:300px;
@@ -191,84 +76,11 @@
 	font-size:1.2em;
 }
 
-#content .content-item {
-	width:300px;
-	height:260px;
-}
-
-#content .overlay {
-    height: 260px;
-    width: 300px;
-}
-
-#content .title {
-	left: 10%;
-}
-
-#content .details {
-	opacity: 1;
-}
-
-#content .action {
-	opacity: 1;
-}
-
-#content #action-learnmore {
-	left: 90px;
-}
-
-#content .action a {
-	background: none repeat scroll 0 0 #B13279;
-	padding: 12px 20px;
-	font-size: 12px;
-	color:#FFF;
-}
 
 }
 
 /*------------------------for ipad------------------------------------*/
 @media screen and (min-width: 712px ) {
-
-.banner, .banner img{
-	height:420px;
-}
-.banner {
-	top:132px;
-}
-
-.banner img
-{
-	position: absolute;
-    top: 0;
-    left: 0;
- }
-
-.text-banner h2 {
-	font-size: 5em;
-	left: 0;
-	top: 150px;
-}
-
-/* content */
-
-#content {
-	position: relative;
-	top:160px;
-	height: 745px;
-	padding:0;
-}
-
-#content .content-left
-{
-	position: absolute;
-	height: 480px;
-}
-
- #content .content-right
-{
-	position: absolute;
-	left: 53%;
-}
 
 
 #content .content-left p:last-child {
@@ -295,44 +107,8 @@
 
 @media screen and (min-width: 1009px ) {
 
-.banner {
-	top:74px;
-}
-
-.text-banner h2 {
-	font-size: 5.8em;
-	left: 0;
-}
-
-#content {
-	top:115px;
-	height: 580px;
-}
-
-#content .content-left
-{
-	position: absolute;
-	width: 65%;
-	height: 260px;
-}
-
-#content .content-right
-{
-	position: absolute;
-	left: 67%;
-}
-
 #content .content-left p:last-child {
 	width: 100%;
-}
-
-#content .group, #content .left{
-	float:left;
-}
-
-#content .right{
-	float:right;
-	margin-left:17px;
 }
 
 }
