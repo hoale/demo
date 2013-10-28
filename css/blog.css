@@ -48,7 +48,7 @@
 }
 .blog-wrapper .main {
 	margin: 30px 0 0 50px;
-	width: 290px;
+	width: 60%;
 }
 
 .main .content {
@@ -215,7 +215,7 @@ article {
 
 .blog-wrapper .main, .sidebar .content {
 	margin: 30px 0 0 70px;
-	width: 75%;
+	width: 70%;
 }
 
 
@@ -253,6 +253,10 @@ article {
 }
 .blog-wrapper .sidebar {
 	float: right;
+	height: 3719px;
+}
+#blog-details.sidebar{
+	height: 1368px;
 }
 }
 
