@@ -73,25 +73,38 @@
                             </p>
                         </div>
                         <div class="orderbottom">
-                            <form id="form" action="">
+                            <form id="contact-form" action="">
                                 <fieldset>
                                     <div class="group">
                                         <div class="left">
                                             <label for="name">Name</label>
                                             <input type="text" id="name" name="name" />
+                                            <span id="name-required-error" class="error-message hide">
+                                                This field is required!
+                                            </span>
                                         </div>
                                         <div class="right">
                                             <label for="email">Email</label>
                                             <input type="text" id="email" name="Email" />
+                                            <span id="email-required-error" class="error-message hide">
+                                                This field is required!
+                                            </span><br>
+                                            <span id="email-valid-error" class="error-message hide">
+                                                Email is not valid!
+                                            </span>
                                         </div>
                                     </div>
                                     
                                     <div class="message">
                                         <label for="message">Message</label>
-                                        <textarea name="message" cols="40" rows="6"></textarea>
+                                        <textarea name="message" cols="40" rows="6"
+                                        id="message"></textarea>
+                                        <span id="message-required-error" class="error-message hide">
+                                            This field is required!
+                                        </span>
                                     </div>
                                     
-                                    <div class="button">
+                                    <div class="butt">
                                         <input type="submit" name="submit" value="SUBMIT" class="button" />
                                     </div>
                                 </fieldset>
@@ -153,5 +166,6 @@
         </div><!-- /container-->
 
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/contact.js"></script>
     </body>
 </html>
