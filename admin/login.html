@@ -7,39 +7,54 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" type="text/css" href="login.css">
+        <link rel="stylesheet" type="text/css" href="css/login.css">
+        <script type="text/javascript" src="../js/JQuery.js"></script>
         <meta name="robots" content="noindex,nofollow">
     </head>
     <body class="login">
        <div id="login">
             <h1>
-                <a href="../Users-Interface/index.html">
-                    <img src="../Users-Interface/img/logo_joyride-coffee.gif">
+                <a href="../index.html">
+                    <img src="../img/logo_joyride-coffee.gif">
                 </a>
             </h1>
-            <form name="loginform" id="loginform" action="#" method="post">
+            <form name="loginform" id="login-form" action="#">
                 <p>
                     <label for="user_login">
                         Username
                         </br>
-                        <input type="text" name="log" id="user-login" class="input" value="admin" size="20" tabindex="10">
+                        <input type="text" name="log" id="user-login" class="input" size="20" tabindex="1">
+                        <span id="user-name-required-error" class="message-error hide">
+                            This field is required!
+                        </span>
+                        <br>
+                        <span id="user-name-valid-error" class="message-error hide">
+                            User name must be within 6-30 characters!
+                        </span>
                     </label>
                 </p>
                 <p>
                     <label for="user_pass">
                         Password
                         </br>
-                        <input type="password" name="pwd" id="user-pass" class="input" value="" size="20" tabindex="20">
+                        <input type="password" name="pwd" id="user-pass" class="input" size="20">
+                        <span id="password-required-error" class="message-error hide">
+                            This field is required!
+                        </span>
+                        <br>
+                        <span id="password-valid-error" class="message-error hide">
+                            User name must be within 6-30 characters!
+                        </span>
                     </label>
                 </p>
                 <p class="forgetmenot">
                     <label for="rememberme">
-                        <input type="checkbox" name="rememberme" id="rememberme" value="forever" tabindex="90">
+                        <input type="checkbox" name="rememberme" id="rememberme" value="forever">
                          Remember Me
                     </label>
                 </p>
                 <p class="submit">
-                    <input type="submit" name="jr-submit" id="jr-submit" class="button-primary" value="Log In" tabindex="100">
+                    <input type="submit" name="jr-submit" id="jr-submit" class="button-primary" value="Log In">
                 </p>
 
             </form>
@@ -47,6 +62,6 @@
                 <a href="#" title="Password Lost and Found">Lost your password?</a>
             </p>
        </div>
-       <div class="clear"></div>
+       <script type="text/javascript" src="js/login.js"></script>
     </body>
 </html>
