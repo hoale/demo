@@ -15,12 +15,14 @@ $(function(){
 		if ($.trim(email).length < 1) {
 			isValid = false;
 			$('#email-required-error').removeClass('hide');
+			$('#email-valid-error').addClass('hide');
 		} else if (!emailRegex.test(email)) {
 			isValid = false;
 			$('#email-valid-error').removeClass('hide');
+			$('#email-required-error').addClass('hide');
 		} else {
 			$('#email-required-error').addClass('hide');
-			$('#email-valid-error').removeClass('hide');
+			$('#email-valid-error').addClass('hide');
 		}
 
 		var message = $("#message").val();
@@ -31,7 +33,6 @@ $(function(){
 			$('#message-required-error').addClass('hide');
 		}
 
-		console.info(email);
 		return isValid;
 
 	});
